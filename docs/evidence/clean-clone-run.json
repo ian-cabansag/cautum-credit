@@ -1,0 +1,29 @@
+{
+  "/": 200,
+  "/static/app.js": 200,
+  "/static/rates.js": 200,
+  "/static/import.js": 200,
+  "/static/surveillance.js": 200,
+  "/api/docs": 200,
+  "/openapi.json": 200,
+  "/data/synthetic_receivables.csv": 200,
+  "analysis_id": "eb70906f3a2b4ef9",
+  "summary_exact": {
+    "gross_ar": "1934634.00",
+    "net_allowed": "1298648.31",
+    "expected_collectible": "1158846.52",
+    "eligible_collateral": "952251.44",
+    "borrowing_base": "761801.19"
+  },
+  "70_percent_base": "666576.03",
+  "memo": "deterministic; no model call",
+  "certificate": "200; scoped and TO REVIEW",
+  "study_gross_delta": "-34530.37",
+  "host_rejected": 400,
+  "cross_origin_rejected": 403,
+  "ai_configured": false,
+  "ai_live_calls_made": 0,
+  "tested_at_utc": "2026-10-25T21:09:10.109883+00:00",
+  "source_commit": "51a749678ec430f6057f6511a402ce60f04512a9",
+  "runtime": "clean clone, pinned fresh venv, single-process loopback Uvicorn"
+}

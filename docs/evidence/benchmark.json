@@ -1,0 +1,28 @@
+{
+  "measured_at_utc": "2026-10-25T20:17:41.366027+00:00",
+  "dataset": "bundled synthetic, 192 cohorts / 8 borrowers",
+  "engine_parse": {
+    "repetitions": 30,
+    "median_ms": 4.064,
+    "p95_ms": 4.508,
+    "min_ms": 3.948,
+    "max_ms": 4.518
+  },
+  "analysis_id": "eb70906f3a2b4ef9",
+  "summary_exact": {
+    "gross_ar": "1934634.00",
+    "net_allowed": "1298648.31",
+    "expected_collectible": "1158846.52",
+    "eligible_collateral": "952251.44",
+    "borrowing_base": "761801.19"
+  },
+  "no_user_impact_implied": true,
+  "ai_calls": 0,
+  "real_loopback_http_multipart_analyze": {
+    "repetitions": 20,
+    "median_ms": 11.703,
+    "p95_ms": 12.055,
+    "min_ms": 11.357,
+    "max_ms": 226.379
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "tests_passed": 87,
+  "working_copy_tests_seconds": 1.2,
+  "lint": "passed",
+  "format": "passed",
+  "slider_positions": 610,
+  "browser_layout_checks": 20,
+  "browser_horizontal_overflows": 0,
+  "print_pages": 12,
+  "offline_open": "Unverified: browser blocks file:// and native app permission unavailable",
+  "cold_clone": null,
+  "report_html_pages": 12,
+  "report_images_loaded": 4,
+  "external_asset_dependencies": 0,
+  "report_page_overflows": 0,
+  "print_method": "US Letter PDF companion from verified browser captures; Poppler-rendered and visually inspected",
+  "native_browser_print_verified": false,
+  "slides_traversed": 10,
+  "slides_arrow_navigation": "passed",
+  "slides_fullscreen": "F dispatched; native fullscreen state not verified in embedded browser"
+}

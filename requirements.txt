@@ -1,0 +1,2 @@
+# Reproducible tested runtime. See RELEASE_MANIFEST.md for platform scope.
+-r requirements.lock

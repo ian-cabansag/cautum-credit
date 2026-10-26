@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "synthetic-t0",
+  "reporting_date": "2026-08-31",
+  "revision": 1,
+  "kind": "synthetic",
+  "borrower_ids": {
+    "Harborview Regional Hospital": "borrower-ca95ab67cd",
+    "Northstar Ambulatory Surgery": "borrower-29def99593",
+    "Lakeside Imaging Partners": "borrower-a14863669a",
+    "Meridian Behavioral Health": "borrower-1b1839d86a",
+    "Summit Orthopedic Group": "borrower-ef257aad60",
+    "Riverbend Community Hospital": "borrower-25fb897ca2",
+    "Atlantic Oncology Network": "borrower-e19d4136dc",
+    "Prairie Women's Health": "borrower-509b7ca7c8"
+  },
+  "payer_ids": {
+    "UnitedHealthcare": "payer-3fe5713509",
+    "Anthem / BCBS": "payer-8a8307c1cb",
+    "Aetna / CVS": "payer-a0cb2c5458",
+    "Cigna": "payer-9a7fb1c14e",
+    "Medicare": "payer-02cdb57c4a",
+    "Medicaid": "payer-ef1d73e45d"
+  },
+  "source_note": "Bundled fictional cohort balances; no bank cash or remittance evidence",
+  "imported_at": null
+}

@@ -11,6 +11,7 @@ A working lender-side, synthetic-data pre-pilot demonstration. Cautum is a sole-
 Python 3.10+ is required. This release was actually tested with Python 3.12.14 on macOS arm64. Other Python/platform combinations have not been run here. If `python3` is 3.9, choose an installed Python 3.12 interpreter rather than using it.
 
 ```sh
+git clone https://github.com/ian-cabansag/cautum-credit.git
 cd cautum-credit
 python3.12 -m venv .venv
 source .venv/bin/activate

@@ -1,0 +1,870 @@
+{
+  "analysis_id": "eb70906f3a2b4ef9",
+  "memo": {
+    "headline": "Preliminary collateral review",
+    "executive_summary": "Across 8 provider borrowers, gross A/R is $1,934,634 and the illustrative borrowing base is $761,801 (39.4% of gross A/R). 12 policy flags require review.",
+    "positives": [
+      "$952,251 calculated eligible collateral under the selected demo policy.",
+      "All financial calculations are deterministic and traced to uploaded cohort data."
+    ],
+    "risks": [
+      "Meridian Behavioral Health: Low estimated advanceability; observed ratio 0.369263565249554219594464042220786892123902110487294568379677934 < 0.45, policy fd834f242bc9a5c4.",
+      "Meridian Behavioral Health: Elevated denial exposure; observed ratio 0.1118424614807086114285398828549819755662653262891748508084772804 > 0.09, policy fd834f242bc9a5c4.",
+      "Meridian Behavioral Health: Payer concentration; observed ratio 0.2567750340890898351026537045317787604268450892388886128638699812 > 0.215, policy fd834f242bc9a5c4.",
+      "Lakeside Imaging Partners: Low estimated advanceability; observed ratio 0.3991205798766177824868547436798795884618812322378127877845663303 < 0.45, policy fd834f242bc9a5c4.",
+      "Lakeside Imaging Partners: Payer concentration; observed ratio 0.2761395031043599671244813688890649291492964440967649301395229089 > 0.215, policy fd834f242bc9a5c4.",
+      "Illustrative, unvalidated collection assumptions and policy-adjusted collateral. Legal eligibility, reserves and undrawn availability are not established. Not a financing recommendation."
+    ],
+    "diligence_questions": [
+      "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+      "Are payer-specific assignments, account control and lender documentation legally permissible?",
+      "Can results be reconciled to actual cash remittances and historical recoveries?"
+    ],
+    "limitations": [
+      "This is an illustrative A/R cohort model, not validated credit underwriting.",
+      "No legal eligibility analysis, cash-verification, claim-level reconciliation, or live payer data.",
+      "Human credit/legal review required before any financing activity."
+    ],
+    "human_review_required": true,
+    "source": "ai",
+    "usage": {
+      "input_tokens": 9608,
+      "cached_input_tokens": 0,
+      "output_tokens": 105
+    },
+    "model": "gpt-6-luna",
+    "provider": "portkey",
+    "evidence_ids": [
+      "risk:3",
+      "risk:4",
+      "risk:10",
+      "risk:2",
+      "risk:9",
+      "risk:limitations",
+      "question:0",
+      "question:1",
+      "question:2"
+    ],
+    "selected_evidence": [
+      {
+        "evidence_id": "risk:3",
+        "provider": "Meridian Behavioral Health",
+        "code": "ADVANCEABILITY",
+        "title": "Low estimated advanceability",
+        "observed": 0.369264,
+        "threshold": 0.45,
+        "observed_exact": "0.369263565249554219594464042220786892123902110487294568379677934",
+        "threshold_exact": "0.45",
+        "operator": "<",
+        "policy_id": "fd834f242bc9a5c4",
+        "cohort_ids": [
+          "540bbe91c57f2c40",
+          "1af348b518fb58cc",
+          "3b45e3ecee0a6129",
+          "c20316191b768cc9",
+          "f25951d343443204",
+          "44d3ad94d48800dd",
+          "c2a546ff8d40e2e6",
+          "783d738bfbf9dc52",
+          "d98c4c03f2db352f",
+          "5657093c640f95cf",
+          "bca726f3a656b10f",
+          "3eb42b256799b68d",
+          "1b74864d88dc9c19",
+          "7cc6b8fb9b7881b3",
+          "60a8c684bb4f176c",
+          "901b1c8648cd3abb",
+          "a188076f56b43d50",
+          "6a0c9e2086408cfc",
+          "7418e1d8fb0068d5",
+          "8b034b98b7d2dfe9",
+          "8a4f66fd91a5b738",
+          "2fda74ec2842e41c",
+          "8b1d3920a7d16706",
+          "db352f9ef3664047"
+        ],
+        "severity": "high"
+      },
+      {
+        "evidence_id": "risk:4",
+        "provider": "Meridian Behavioral Health",
+        "code": "DENIAL",
+        "title": "Elevated denial exposure",
+        "observed": 0.111842,
+        "threshold": 0.09,
+        "observed_exact": "0.1118424614807086114285398828549819755662653262891748508084772804",
+        "threshold_exact": "0.09",
+        "operator": ">",
+        "policy_id": "fd834f242bc9a5c4",
+        "cohort_ids": [
+          "540bbe91c57f2c40",
+          "1af348b518fb58cc",
+          "3b45e3ecee0a6129",
+          "c20316191b768cc9",
+          "f25951d343443204",
+          "44d3ad94d48800dd",
+          "c2a546ff8d40e2e6",
+          "783d738bfbf9dc52",
+          "d98c4c03f2db352f",
+          "5657093c640f95cf",
+          "bca726f3a656b10f",
+          "3eb42b256799b68d",
+          "1b74864d88dc9c19",
+          "7cc6b8fb9b7881b3",
+          "60a8c684bb4f176c",
+          "901b1c8648cd3abb",
+          "a188076f56b43d50",
+          "6a0c9e2086408cfc",
+          "7418e1d8fb0068d5",
+          "8b034b98b7d2dfe9",
+          "8a4f66fd91a5b738",
+          "2fda74ec2842e41c",
+          "8b1d3920a7d16706",
+          "db352f9ef3664047"
+        ],
+        "severity": "high"
+      },
+      {
+        "evidence_id": "risk:10",
+        "provider": "Meridian Behavioral Health",
+        "code": "CONCENTRATION",
+        "title": "Payer concentration",
+        "observed": 0.256775,
+        "threshold": 0.215,
+        "observed_exact": "0.2567750340890898351026537045317787604268450892388886128638699812",
+        "threshold_exact": "0.215",
+        "operator": ">",
+        "policy_id": "fd834f242bc9a5c4",
+        "cohort_ids": [
+          "f25951d343443204",
+          "44d3ad94d48800dd",
+          "c2a546ff8d40e2e6",
+          "783d738bfbf9dc52"
+        ],
+        "severity": "medium"
+      },
+      {
+        "evidence_id": "risk:2",
+        "provider": "Lakeside Imaging Partners",
+        "code": "ADVANCEABILITY",
+        "title": "Low estimated advanceability",
+        "observed": 0.399121,
+        "threshold": 0.45,
+        "observed_exact": "0.3991205798766177824868547436798795884618812322378127877845663303",
+        "threshold_exact": "0.45",
+        "operator": "<",
+        "policy_id": "fd834f242bc9a5c4",
+        "cohort_ids": [
+          "2f5d74d0c513edcd",
+          "df5331ef23baa8d1",
+          "16ad4678c94d62a5",
+          "230589988b633ec7",
+          "9bbf49592e518768",
+          "9e67a17eeef6e479",
+          "81bdaaa9b5c22bc4",
+          "fe9220a23dd2968f",
+          "085b833572fa30c4",
+          "5fcae38bfc55593c",
+          "b1413b4e60657324",
+          "00b5a99caaee0327",
+          "c3d3c5445095817c",
+          "1c41c6de7fb8780b",
+          "e116148b1ee7cf3f",
+          "b8882247e16a2056",
+          "267f192d0b635e57",
+          "eeda4b4d7d3685a4",
+          "260278b89839faf3",
+          "0433d06624b9ce77",
+          "26be8f313726c194",
+          "44faaa978199efcd",
+          "ba099c01e134325f",
+          "73ebba932c774c56"
+        ],
+        "severity": "high"
+      },
+      {
+        "evidence_id": "risk:9",
+        "provider": "Lakeside Imaging Partners",
+        "code": "CONCENTRATION",
+        "title": "Payer concentration",
+        "observed": 0.27614,
+        "threshold": 0.215,
+        "observed_exact": "0.2761395031043599671244813688890649291492964440967649301395229089",
+        "threshold_exact": "0.215",
+        "operator": ">",
+        "policy_id": "fd834f242bc9a5c4",
+        "cohort_ids": [
+          "9bbf49592e518768",
+          "9e67a17eeef6e479",
+          "81bdaaa9b5c22bc4",
+          "fe9220a23dd2968f"
+        ],
+        "severity": "medium"
+      }
+    ],
+    "cost": null,
+    "price_estimate": {
+      "usd": "0.0010133",
+      "rates_usd_per_million": {
+        "input": "0.10",
+        "cached_input": "0.01",
+        "output": "0.50"
+      },
+      "source_url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+      "verified_on": "2026-10-25",
+      "basis": "Observed usage × published short-context Global Standard model rates. Excludes gateway fees, account discounts, hosting and support; not an invoice.",
+      "gateway_cache_hit": true,
+      "cache_note": "Gateway HIT responses may replay prior token counts. Reference estimate is uncached-equivalent model cost, not verified new billable usage."
+    },
+    "latency_ms": 1980.47,
+    "generation_method": "AI chose borrowers, invoked a read-only evidence tool and selected inspected evidence. Financial wording and figures are deterministic.",
+    "coverage": {
+      "included_flags": 5,
+      "total_flags": 12,
+      "borrowers_inspected": 2,
+      "borrowers_total": 8
+    },
+    "investigation": {
+      "profile": "standard",
+      "focus": "review",
+      "calls": [
+        {
+          "turn": 1,
+          "response_id": "resp_09660f0f97e1be11016adeab21e03c8197a9dbdaa6a7672594",
+          "returned_model": "gpt-6-luna-global",
+          "gateway_cost_header": null,
+          "gateway_provider": "azure-openai",
+          "gateway_cache_status": "HIT",
+          "gateway_retry_count": "0",
+          "header_names": [
+            "alt-svc",
+            "cf-ray",
+            "connection",
+            "content-encoding",
+            "content-type",
+            "date",
+            "server",
+            "transfer-encoding",
+            "x-portkey-cache-status",
+            "x-portkey-last-used-option-index",
+            "x-portkey-provider",
+            "x-portkey-retry-attempt-count",
+            "x-portkey-trace-id"
+          ],
+          "usage": {
+            "input_tokens": 1039,
+            "cached_input_tokens": 0,
+            "output_tokens": 23
+          },
+          "latency_ms": 1273.67,
+          "service_tier": "default"
+        },
+        {
+          "turn": 2,
+          "response_id": "resp_09660f0f97e1be11016adeab2319e481979da1af471ac25422",
+          "returned_model": "gpt-6-luna-global",
+          "gateway_cost_header": null,
+          "gateway_provider": "azure-openai",
+          "gateway_cache_status": "HIT",
+          "gateway_retry_count": "0",
+          "header_names": [
+            "alt-svc",
+            "cf-ray",
+            "connection",
+            "content-encoding",
+            "content-type",
+            "date",
+            "server",
+            "transfer-encoding",
+            "x-portkey-cache-status",
+            "x-portkey-last-used-option-index",
+            "x-portkey-provider",
+            "x-portkey-retry-attempt-count",
+            "x-portkey-trace-id"
+          ],
+          "usage": {
+            "input_tokens": 3358,
+            "cached_input_tokens": 0,
+            "output_tokens": 23
+          },
+          "latency_ms": 262.6,
+          "service_tier": "default"
+        },
+        {
+          "turn": 3,
+          "response_id": "resp_09660f0f97e1be11016adeab2498588197adb3a226f7316559",
+          "returned_model": "gpt-6-luna-global",
+          "gateway_cost_header": null,
+          "gateway_provider": "azure-openai",
+          "gateway_cache_status": "HIT",
+          "gateway_retry_count": "0",
+          "header_names": [
+            "alt-svc",
+            "cf-ray",
+            "connection",
+            "content-encoding",
+            "content-type",
+            "date",
+            "server",
+            "transfer-encoding",
+            "x-portkey-cache-status",
+            "x-portkey-last-used-option-index",
+            "x-portkey-provider",
+            "x-portkey-retry-attempt-count",
+            "x-portkey-trace-id"
+          ],
+          "usage": {
+            "input_tokens": 5211,
+            "cached_input_tokens": 0,
+            "output_tokens": 59
+          },
+          "latency_ms": 431.95,
+          "service_tier": "default"
+        }
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "tool": "read_review_evidence",
+          "call_id": "call_JXNL5DGDAkHsctuJHAQOjHeZ",
+          "arguments": {
+            "borrower_id": "b7"
+          },
+          "result": {
+            "analysis_id": "eb70906f3a2b4ef9",
+            "policy_id": "fd834f242bc9a5c4",
+            "borrower_id": "b7",
+            "provider": "Meridian Behavioral Health",
+            "amounts_exact": {
+              "gross_ar": "181143.00",
+              "net_allowed": "121924.85",
+              "expected_collectible": "102267.17",
+              "eligible_collateral": "83611.88",
+              "borrowing_base": "66889.51"
+            },
+            "risk_catalog": {
+              "risk:3": "Meridian Behavioral Health: Low estimated advanceability; observed ratio 0.369263565249554219594464042220786892123902110487294568379677934 < 0.45, policy fd834f242bc9a5c4.",
+              "risk:4": "Meridian Behavioral Health: Elevated denial exposure; observed ratio 0.1118424614807086114285398828549819755662653262891748508084772804 > 0.09, policy fd834f242bc9a5c4.",
+              "risk:10": "Meridian Behavioral Health: Payer concentration; observed ratio 0.2567750340890898351026537045317787604268450892388886128638699812 > 0.215, policy fd834f242bc9a5c4."
+            },
+            "flags": [
+              {
+                "evidence_id": "risk:3",
+                "provider": "Meridian Behavioral Health",
+                "code": "ADVANCEABILITY",
+                "title": "Low estimated advanceability",
+                "observed": 0.369264,
+                "threshold": 0.45,
+                "observed_exact": "0.369263565249554219594464042220786892123902110487294568379677934",
+                "threshold_exact": "0.45",
+                "operator": "<",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "540bbe91c57f2c40",
+                  "1af348b518fb58cc",
+                  "3b45e3ecee0a6129",
+                  "c20316191b768cc9",
+                  "f25951d343443204",
+                  "44d3ad94d48800dd",
+                  "c2a546ff8d40e2e6",
+                  "783d738bfbf9dc52",
+                  "d98c4c03f2db352f",
+                  "5657093c640f95cf",
+                  "bca726f3a656b10f",
+                  "3eb42b256799b68d",
+                  "1b74864d88dc9c19",
+                  "7cc6b8fb9b7881b3",
+                  "60a8c684bb4f176c",
+                  "901b1c8648cd3abb",
+                  "a188076f56b43d50",
+                  "6a0c9e2086408cfc",
+                  "7418e1d8fb0068d5",
+                  "8b034b98b7d2dfe9",
+                  "8a4f66fd91a5b738",
+                  "2fda74ec2842e41c",
+                  "8b1d3920a7d16706",
+                  "db352f9ef3664047"
+                ],
+                "severity": "high"
+              },
+              {
+                "evidence_id": "risk:4",
+                "provider": "Meridian Behavioral Health",
+                "code": "DENIAL",
+                "title": "Elevated denial exposure",
+                "observed": 0.111842,
+                "threshold": 0.09,
+                "observed_exact": "0.1118424614807086114285398828549819755662653262891748508084772804",
+                "threshold_exact": "0.09",
+                "operator": ">",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "540bbe91c57f2c40",
+                  "1af348b518fb58cc",
+                  "3b45e3ecee0a6129",
+                  "c20316191b768cc9",
+                  "f25951d343443204",
+                  "44d3ad94d48800dd",
+                  "c2a546ff8d40e2e6",
+                  "783d738bfbf9dc52",
+                  "d98c4c03f2db352f",
+                  "5657093c640f95cf",
+                  "bca726f3a656b10f",
+                  "3eb42b256799b68d",
+                  "1b74864d88dc9c19",
+                  "7cc6b8fb9b7881b3",
+                  "60a8c684bb4f176c",
+                  "901b1c8648cd3abb",
+                  "a188076f56b43d50",
+                  "6a0c9e2086408cfc",
+                  "7418e1d8fb0068d5",
+                  "8b034b98b7d2dfe9",
+                  "8a4f66fd91a5b738",
+                  "2fda74ec2842e41c",
+                  "8b1d3920a7d16706",
+                  "db352f9ef3664047"
+                ],
+                "severity": "high"
+              },
+              {
+                "evidence_id": "risk:10",
+                "provider": "Meridian Behavioral Health",
+                "code": "CONCENTRATION",
+                "title": "Payer concentration",
+                "observed": 0.256775,
+                "threshold": 0.215,
+                "observed_exact": "0.2567750340890898351026537045317787604268450892388886128638699812",
+                "threshold_exact": "0.215",
+                "operator": ">",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "f25951d343443204",
+                  "44d3ad94d48800dd",
+                  "c2a546ff8d40e2e6",
+                  "783d738bfbf9dc52"
+                ],
+                "severity": "medium"
+              }
+            ],
+            "question_catalog": {
+              "question:0": "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+              "question:1": "Are payer-specific assignments, account control and lender documentation legally permissible?",
+              "question:2": "Can results be reconciled to actual cash remittances and historical recoveries?"
+            },
+            "cohorts": [
+              {
+                "cohort_id": "1af348b518fb58cc",
+                "provider": "Meridian Behavioral Health",
+                "payer": "Aetna / CVS",
+                "age": "31-60",
+                "inputs_exact": {
+                  "provider": "Meridian Behavioral Health",
+                  "payer": "Aetna / CVS",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "31-60",
+                  "gross_ar": "5808",
+                  "contractual_adjustment_rate": "0.3084",
+                  "historical_collection_factor": "0.9472",
+                  "denial_rate": "0.1023"
+                },
+                "amounts_exact": {
+                  "gross_ar": "5808.00",
+                  "net_allowed": "4016.81",
+                  "expected_collectible": "3415.50",
+                  "eligible_collateral": "3244.73",
+                  "borrowing_base": "2595.78"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "-0.0028",
+                  "expected_collectible": "-0.001708050432",
+                  "eligible_collateral": "0.0033773520896",
+                  "borrowing_base": "-0.00129811832832"
+                }
+              },
+              {
+                "cohort_id": "1b74864d88dc9c19",
+                "provider": "Meridian Behavioral Health",
+                "payer": "Medicaid",
+                "age": "0-30",
+                "inputs_exact": {
+                  "provider": "Meridian Behavioral Health",
+                  "payer": "Medicaid",
+                  "payer_type": "Medicaid",
+                  "aging_bucket": "0-30",
+                  "gross_ar": "9806",
+                  "contractual_adjustment_rate": "0.4219",
+                  "historical_collection_factor": "0.9167",
+                  "denial_rate": "0.1004"
+                },
+                "amounts_exact": {
+                  "gross_ar": "9806.00",
+                  "net_allowed": "5668.85",
+                  "expected_collectible": "4674.89",
+                  "eligible_collateral": "3739.91",
+                  "borrowing_base": "2991.93"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "PAYER_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.0014",
+                  "expected_collectible": "-0.001507053352",
+                  "eligible_collateral": "-0.0032056426816",
+                  "borrowing_base": "-0.00056451414528"
+                }
+              },
+              {
+                "cohort_id": "2fda74ec2842e41c",
+                "provider": "Meridian Behavioral Health",
+                "payer": "UnitedHealthcare",
+                "age": "31-60",
+                "inputs_exact": {
+                  "provider": "Meridian Behavioral Health",
+                  "payer": "UnitedHealthcare",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "31-60",
+                  "gross_ar": "9445",
+                  "contractual_adjustment_rate": "0.305",
+                  "historical_collection_factor": "0.9482",
+                  "denial_rate": "0.1115"
+                },
+                "amounts_exact": {
+                  "gross_ar": "9445.00",
+                  "net_allowed": "6564.28",
+                  "expected_collectible": "5530.24",
+                  "eligible_collateral": "5253.73",
+                  "borrowing_base": "4202.98"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.005",
+                  "expected_collectible": "-0.0021756175",
+                  "eligible_collateral": "-0.000066836625",
+                  "borrowing_base": "-0.0040534693"
+                }
+              },
+              {
+                "cohort_id": "3b45e3ecee0a6129",
+                "provider": "Meridian Behavioral Health",
+                "payer": "Aetna / CVS",
+                "age": "61-90",
+                "inputs_exact": {
+                  "provider": "Meridian Behavioral Health",
+                  "payer": "Aetna / CVS",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "61-90",
+                  "gross_ar": "4001",
+                  "contractual_adjustment_rate": "0.3113",
+                  "historical_collection_factor": "0.948",
+                  "denial_rate": "0.1275"
+                },
+                "amounts_exact": {
+                  "gross_ar": "4001.00",
+                  "net_allowed": "2755.49",
+                  "expected_collectible": "2279.15",
+                  "eligible_collateral": "1823.32",
+                  "borrowing_base": "1458.65"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.0013",
+                  "expected_collectible": "0.002631569",
+                  "eligible_collateral": "0.0021052552",
+                  "borrowing_base": "-0.00431579584"
+                }
+              }
+            ],
+            "coverage": {
+              "cohorts_returned": 4,
+              "borrower_cohorts": 24
+            },
+            "gate": "Synthetic, unvalidated factors. Legal eligibility unreviewed. Human review required."
+          }
+        },
+        {
+          "step": 2,
+          "tool": "read_review_evidence",
+          "call_id": "call_2jcP11x5YeuRlsyhTTbagGKq",
+          "arguments": {
+            "borrower_id": "b5"
+          },
+          "result": {
+            "analysis_id": "eb70906f3a2b4ef9",
+            "policy_id": "fd834f242bc9a5c4",
+            "borrower_id": "b5",
+            "provider": "Lakeside Imaging Partners",
+            "amounts_exact": {
+              "gross_ar": "201974.00",
+              "net_allowed": "135758.58",
+              "expected_collectible": "121903.20",
+              "eligible_collateral": "100764.99",
+              "borrowing_base": "80611.98"
+            },
+            "risk_catalog": {
+              "risk:2": "Lakeside Imaging Partners: Low estimated advanceability; observed ratio 0.3991205798766177824868547436798795884618812322378127877845663303 < 0.45, policy fd834f242bc9a5c4.",
+              "risk:9": "Lakeside Imaging Partners: Payer concentration; observed ratio 0.2761395031043599671244813688890649291492964440967649301395229089 > 0.215, policy fd834f242bc9a5c4."
+            },
+            "flags": [
+              {
+                "evidence_id": "risk:2",
+                "provider": "Lakeside Imaging Partners",
+                "code": "ADVANCEABILITY",
+                "title": "Low estimated advanceability",
+                "observed": 0.399121,
+                "threshold": 0.45,
+                "observed_exact": "0.3991205798766177824868547436798795884618812322378127877845663303",
+                "threshold_exact": "0.45",
+                "operator": "<",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "2f5d74d0c513edcd",
+                  "df5331ef23baa8d1",
+                  "16ad4678c94d62a5",
+                  "230589988b633ec7",
+                  "9bbf49592e518768",
+                  "9e67a17eeef6e479",
+                  "81bdaaa9b5c22bc4",
+                  "fe9220a23dd2968f",
+                  "085b833572fa30c4",
+                  "5fcae38bfc55593c",
+                  "b1413b4e60657324",
+                  "00b5a99caaee0327",
+                  "c3d3c5445095817c",
+                  "1c41c6de7fb8780b",
+                  "e116148b1ee7cf3f",
+                  "b8882247e16a2056",
+                  "267f192d0b635e57",
+                  "eeda4b4d7d3685a4",
+                  "260278b89839faf3",
+                  "0433d06624b9ce77",
+                  "26be8f313726c194",
+                  "44faaa978199efcd",
+                  "ba099c01e134325f",
+                  "73ebba932c774c56"
+                ],
+                "severity": "high"
+              },
+              {
+                "evidence_id": "risk:9",
+                "provider": "Lakeside Imaging Partners",
+                "code": "CONCENTRATION",
+                "title": "Payer concentration",
+                "observed": 0.27614,
+                "threshold": 0.215,
+                "observed_exact": "0.2761395031043599671244813688890649291492964440967649301395229089",
+                "threshold_exact": "0.215",
+                "operator": ">",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "9bbf49592e518768",
+                  "9e67a17eeef6e479",
+                  "81bdaaa9b5c22bc4",
+                  "fe9220a23dd2968f"
+                ],
+                "severity": "medium"
+              }
+            ],
+            "question_catalog": {
+              "question:0": "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+              "question:1": "Are payer-specific assignments, account control and lender documentation legally permissible?",
+              "question:2": "Can results be reconciled to actual cash remittances and historical recoveries?"
+            },
+            "cohorts": [
+              {
+                "cohort_id": "00b5a99caaee0327",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Cigna",
+                "age": "91+",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Cigna",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "91+",
+                  "gross_ar": "2437",
+                  "contractual_adjustment_rate": "0.3147",
+                  "historical_collection_factor": "0.9261",
+                  "denial_rate": "0.0875"
+                },
+                "amounts_exact": {
+                  "gross_ar": "2437.00",
+                  "net_allowed": "1670.08",
+                  "expected_collectible": "1411.32",
+                  "eligible_collateral": "0.00",
+                  "borrowing_base": "0.00"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.0039",
+                  "expected_collectible": "-0.004947041625",
+                  "eligible_collateral": "0",
+                  "borrowing_base": "0"
+                }
+              },
+              {
+                "cohort_id": "0433d06624b9ce77",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Medicare",
+                "age": "91+",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Medicare",
+                  "payer_type": "Medicare",
+                  "aging_bucket": "91+",
+                  "gross_ar": "3944",
+                  "contractual_adjustment_rate": "0.3713",
+                  "historical_collection_factor": "0.9353",
+                  "denial_rate": "0.0976"
+                },
+                "amounts_exact": {
+                  "gross_ar": "3944.00",
+                  "net_allowed": "2479.59",
+                  "expected_collectible": "2092.81",
+                  "eligible_collateral": "0.00",
+                  "borrowing_base": "0.00"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "PAYER_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "-0.0028",
+                  "expected_collectible": "-0.002822806016",
+                  "eligible_collateral": "0",
+                  "borrowing_base": "0"
+                }
+              },
+              {
+                "cohort_id": "085b833572fa30c4",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Cigna",
+                "age": "0-30",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Cigna",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "0-30",
+                  "gross_ar": "11925",
+                  "contractual_adjustment_rate": "0.2928",
+                  "historical_collection_factor": "0.9425",
+                  "denial_rate": "0.0271"
+                },
+                "amounts_exact": {
+                  "gross_ar": "11925.00",
+                  "net_allowed": "8433.36",
+                  "expected_collectible": "7733.04",
+                  "eligible_collateral": "7733.04",
+                  "borrowing_base": "6186.43"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0",
+                  "expected_collectible": "0.00097278",
+                  "eligible_collateral": "0.00097278",
+                  "borrowing_base": "-0.001221776"
+                }
+              },
+              {
+                "cohort_id": "16ad4678c94d62a5",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Aetna / CVS",
+                "age": "61-90",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Aetna / CVS",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "61-90",
+                  "gross_ar": "3585",
+                  "contractual_adjustment_rate": "0.2853",
+                  "historical_collection_factor": "0.9445",
+                  "denial_rate": "0.068"
+                },
+                "amounts_exact": {
+                  "gross_ar": "3585.00",
+                  "net_allowed": "2562.20",
+                  "expected_collectible": "2255.44",
+                  "eligible_collateral": "1804.35",
+                  "borrowing_base": "1443.48"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.0005",
+                  "expected_collectible": "0.002397337",
+                  "eligible_collateral": "-0.0000821304",
+                  "borrowing_base": "-0.00006570432"
+                }
+              }
+            ],
+            "coverage": {
+              "cohorts_returned": 4,
+              "borrower_cohorts": 24
+            },
+            "gate": "Synthetic, unvalidated factors. Legal eligibility unreviewed. Human review required."
+          }
+        }
+      ],
+      "max_tools": 2,
+      "deadline_seconds": 60,
+      "rule_flag_coverage": 0.4166666666666667
+    }
+  }
+}

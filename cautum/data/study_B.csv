@@ -1,0 +1,5 @@
+provider,payer,payer_type,aging_bucket,gross_ar,contractual_adjustment_rate,historical_collection_factor,denial_rate
+Study B Clinic,Study Commercial,Commercial,0-30,12000,0.20,0.90,0.05
+Study B Clinic,Study Commercial,Commercial,31-60,9000,0.20,0.90,0.05
+Study B Clinic,Study Commercial,Commercial,61-90,7000,0.20,0.90,0.05
+Study B Clinic,Study Commercial,Commercial,91+,5000,0.20,0.90,0.05

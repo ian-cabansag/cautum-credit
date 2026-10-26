@@ -1,0 +1,704 @@
+{
+  "analysis_id": "eb70906f3a2b4ef9",
+  "memo": {
+    "headline": "Preliminary collateral review",
+    "executive_summary": "Across 8 provider borrowers, gross A/R is $1,934,634 and the illustrative borrowing base is $761,801 (39.4% of gross A/R). 12 policy flags require review.",
+    "positives": [
+      "$952,251 calculated eligible collateral under the selected demo policy.",
+      "All financial calculations are deterministic and traced to uploaded cohort data."
+    ],
+    "risks": [
+      "Lakeside Imaging Partners: Payer concentration; observed ratio 0.2761395031043599671244813688890649291492964440967649301395229089 > 0.215, policy fd834f242bc9a5c4.",
+      "Riverbend Community Hospital: Payer concentration; observed ratio 0.2316240033029700926379893169561066240033029700926379893169561066 > 0.215, policy fd834f242bc9a5c4."
+    ],
+    "diligence_questions": [
+      "Are payer-specific assignments, account control and lender documentation legally permissible?"
+    ],
+    "limitations": [
+      "This is an illustrative A/R cohort model, not validated credit underwriting.",
+      "No legal eligibility analysis, cash-verification, claim-level reconciliation, or live payer data.",
+      "Human credit/legal review required before any financing activity."
+    ],
+    "human_review_required": true,
+    "source": "ai",
+    "usage": {
+      "input_tokens": 8713,
+      "cached_input_tokens": 0,
+      "output_tokens": 81
+    },
+    "model": "gpt-6-luna",
+    "provider": "portkey",
+    "evidence_ids": [
+      "risk:9",
+      "risk:11",
+      "question:1"
+    ],
+    "selected_evidence": [
+      {
+        "evidence_id": "risk:9",
+        "provider": "Lakeside Imaging Partners",
+        "code": "CONCENTRATION",
+        "title": "Payer concentration",
+        "observed": 0.27614,
+        "threshold": 0.215,
+        "observed_exact": "0.2761395031043599671244813688890649291492964440967649301395229089",
+        "threshold_exact": "0.215",
+        "operator": ">",
+        "policy_id": "fd834f242bc9a5c4",
+        "cohort_ids": [
+          "9bbf49592e518768",
+          "9e67a17eeef6e479",
+          "81bdaaa9b5c22bc4",
+          "fe9220a23dd2968f"
+        ],
+        "severity": "medium"
+      },
+      {
+        "evidence_id": "risk:11",
+        "provider": "Riverbend Community Hospital",
+        "code": "CONCENTRATION",
+        "title": "Payer concentration",
+        "observed": 0.231624,
+        "threshold": 0.215,
+        "observed_exact": "0.2316240033029700926379893169561066240033029700926379893169561066",
+        "threshold_exact": "0.215",
+        "operator": ">",
+        "policy_id": "fd834f242bc9a5c4",
+        "cohort_ids": [
+          "ba5d68af9fd8b7f0",
+          "c0502ddaaa392a2f",
+          "0c9e96217c947d70",
+          "76d1a18ba30f03d2"
+        ],
+        "severity": "medium"
+      }
+    ],
+    "cost": null,
+    "price_estimate": {
+      "usd": "0.0009118",
+      "rates_usd_per_million": {
+        "input": "0.10",
+        "cached_input": "0.01",
+        "output": "0.50"
+      },
+      "source_url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+      "verified_on": "2026-10-25",
+      "basis": "Observed usage × published short-context Global Standard model rates. Excludes gateway fees, account discounts, hosting and support; not an invoice.",
+      "gateway_cache_hit": true,
+      "cache_note": "Gateway HIT responses may replay prior token counts. Reference estimate is uncached-equivalent model cost, not verified new billable usage."
+    },
+    "latency_ms": 2415.09,
+    "generation_method": "AI chose borrowers, invoked a read-only evidence tool and selected inspected evidence. Financial wording and figures are deterministic.",
+    "coverage": {
+      "included_flags": 4,
+      "total_flags": 12,
+      "borrowers_inspected": 2,
+      "borrowers_total": 8
+    },
+    "investigation": {
+      "profile": "standard",
+      "focus": "concentration",
+      "calls": [
+        {
+          "turn": 1,
+          "response_id": "resp_06d086c63bc52c20016adeb28bba2881908875bd9752c1cce0",
+          "returned_model": "gpt-6-luna-global",
+          "gateway_cost_header": null,
+          "gateway_provider": "azure-openai",
+          "gateway_cache_status": "HIT",
+          "gateway_retry_count": "0",
+          "header_names": [
+            "alt-svc",
+            "cf-ray",
+            "connection",
+            "content-encoding",
+            "content-type",
+            "date",
+            "server",
+            "transfer-encoding",
+            "x-portkey-cache-status",
+            "x-portkey-last-used-option-index",
+            "x-portkey-provider",
+            "x-portkey-retry-attempt-count",
+            "x-portkey-trace-id"
+          ],
+          "usage": {
+            "input_tokens": 1040,
+            "cached_input_tokens": 0,
+            "output_tokens": 23
+          },
+          "latency_ms": 1816.47,
+          "service_tier": "default"
+        },
+        {
+          "turn": 2,
+          "response_id": "resp_06d086c63bc52c20016adeb28cf8ac819097d7c5e00023a854",
+          "returned_model": "gpt-6-luna-global",
+          "gateway_cost_header": null,
+          "gateway_provider": "azure-openai",
+          "gateway_cache_status": "HIT",
+          "gateway_retry_count": "0",
+          "header_names": [
+            "alt-svc",
+            "cf-ray",
+            "connection",
+            "content-encoding",
+            "content-type",
+            "date",
+            "server",
+            "transfer-encoding",
+            "x-portkey-cache-status",
+            "x-portkey-last-used-option-index",
+            "x-portkey-provider",
+            "x-portkey-retry-attempt-count",
+            "x-portkey-trace-id"
+          ],
+          "usage": {
+            "input_tokens": 2893,
+            "cached_input_tokens": 0,
+            "output_tokens": 23
+          },
+          "latency_ms": 268.34,
+          "service_tier": "default"
+        },
+        {
+          "turn": 3,
+          "response_id": "resp_06d086c63bc52c20016adeb28e79b48190b4ba44ab4d7f3108",
+          "returned_model": "gpt-6-luna-global",
+          "gateway_cost_header": null,
+          "gateway_provider": "azure-openai",
+          "gateway_cache_status": "HIT",
+          "gateway_retry_count": "0",
+          "header_names": [
+            "alt-svc",
+            "cf-ray",
+            "connection",
+            "content-encoding",
+            "content-type",
+            "date",
+            "server",
+            "transfer-encoding",
+            "x-portkey-cache-status",
+            "x-portkey-last-used-option-index",
+            "x-portkey-provider",
+            "x-portkey-retry-attempt-count",
+            "x-portkey-trace-id"
+          ],
+          "usage": {
+            "input_tokens": 4780,
+            "cached_input_tokens": 0,
+            "output_tokens": 35
+          },
+          "latency_ms": 319.17,
+          "service_tier": "default"
+        }
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "tool": "read_review_evidence",
+          "call_id": "call_lnizWvLJaYc2VXgCZmCJMz4w",
+          "arguments": {
+            "borrower_id": "b5"
+          },
+          "result": {
+            "analysis_id": "eb70906f3a2b4ef9",
+            "policy_id": "fd834f242bc9a5c4",
+            "borrower_id": "b5",
+            "provider": "Lakeside Imaging Partners",
+            "amounts_exact": {
+              "gross_ar": "201974.00",
+              "net_allowed": "135758.58",
+              "expected_collectible": "121903.20",
+              "eligible_collateral": "100764.99",
+              "borrowing_base": "80611.98"
+            },
+            "risk_catalog": {
+              "risk:2": "Lakeside Imaging Partners: Low estimated advanceability; observed ratio 0.3991205798766177824868547436798795884618812322378127877845663303 < 0.45, policy fd834f242bc9a5c4.",
+              "risk:9": "Lakeside Imaging Partners: Payer concentration; observed ratio 0.2761395031043599671244813688890649291492964440967649301395229089 > 0.215, policy fd834f242bc9a5c4."
+            },
+            "flags": [
+              {
+                "evidence_id": "risk:2",
+                "provider": "Lakeside Imaging Partners",
+                "code": "ADVANCEABILITY",
+                "title": "Low estimated advanceability",
+                "observed": 0.399121,
+                "threshold": 0.45,
+                "observed_exact": "0.3991205798766177824868547436798795884618812322378127877845663303",
+                "threshold_exact": "0.45",
+                "operator": "<",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "2f5d74d0c513edcd",
+                  "df5331ef23baa8d1",
+                  "16ad4678c94d62a5",
+                  "230589988b633ec7",
+                  "9bbf49592e518768",
+                  "9e67a17eeef6e479",
+                  "81bdaaa9b5c22bc4",
+                  "fe9220a23dd2968f",
+                  "085b833572fa30c4",
+                  "5fcae38bfc55593c",
+                  "b1413b4e60657324",
+                  "00b5a99caaee0327",
+                  "c3d3c5445095817c",
+                  "1c41c6de7fb8780b",
+                  "e116148b1ee7cf3f",
+                  "b8882247e16a2056",
+                  "267f192d0b635e57",
+                  "eeda4b4d7d3685a4",
+                  "260278b89839faf3",
+                  "0433d06624b9ce77",
+                  "26be8f313726c194",
+                  "44faaa978199efcd",
+                  "ba099c01e134325f",
+                  "73ebba932c774c56"
+                ],
+                "severity": "high"
+              },
+              {
+                "evidence_id": "risk:9",
+                "provider": "Lakeside Imaging Partners",
+                "code": "CONCENTRATION",
+                "title": "Payer concentration",
+                "observed": 0.27614,
+                "threshold": 0.215,
+                "observed_exact": "0.2761395031043599671244813688890649291492964440967649301395229089",
+                "threshold_exact": "0.215",
+                "operator": ">",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "9bbf49592e518768",
+                  "9e67a17eeef6e479",
+                  "81bdaaa9b5c22bc4",
+                  "fe9220a23dd2968f"
+                ],
+                "severity": "medium"
+              }
+            ],
+            "question_catalog": {
+              "question:0": "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+              "question:1": "Are payer-specific assignments, account control and lender documentation legally permissible?",
+              "question:2": "Can results be reconciled to actual cash remittances and historical recoveries?"
+            },
+            "cohorts": [
+              {
+                "cohort_id": "00b5a99caaee0327",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Cigna",
+                "age": "91+",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Cigna",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "91+",
+                  "gross_ar": "2437",
+                  "contractual_adjustment_rate": "0.3147",
+                  "historical_collection_factor": "0.9261",
+                  "denial_rate": "0.0875"
+                },
+                "amounts_exact": {
+                  "gross_ar": "2437.00",
+                  "net_allowed": "1670.08",
+                  "expected_collectible": "1411.32",
+                  "eligible_collateral": "0.00",
+                  "borrowing_base": "0.00"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.0039",
+                  "expected_collectible": "-0.004947041625",
+                  "eligible_collateral": "0",
+                  "borrowing_base": "0"
+                }
+              },
+              {
+                "cohort_id": "0433d06624b9ce77",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Medicare",
+                "age": "91+",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Medicare",
+                  "payer_type": "Medicare",
+                  "aging_bucket": "91+",
+                  "gross_ar": "3944",
+                  "contractual_adjustment_rate": "0.3713",
+                  "historical_collection_factor": "0.9353",
+                  "denial_rate": "0.0976"
+                },
+                "amounts_exact": {
+                  "gross_ar": "3944.00",
+                  "net_allowed": "2479.59",
+                  "expected_collectible": "2092.81",
+                  "eligible_collateral": "0.00",
+                  "borrowing_base": "0.00"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "PAYER_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "-0.0028",
+                  "expected_collectible": "-0.002822806016",
+                  "eligible_collateral": "0",
+                  "borrowing_base": "0"
+                }
+              },
+              {
+                "cohort_id": "085b833572fa30c4",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Cigna",
+                "age": "0-30",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Cigna",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "0-30",
+                  "gross_ar": "11925",
+                  "contractual_adjustment_rate": "0.2928",
+                  "historical_collection_factor": "0.9425",
+                  "denial_rate": "0.0271"
+                },
+                "amounts_exact": {
+                  "gross_ar": "11925.00",
+                  "net_allowed": "8433.36",
+                  "expected_collectible": "7733.04",
+                  "eligible_collateral": "7733.04",
+                  "borrowing_base": "6186.43"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0",
+                  "expected_collectible": "0.00097278",
+                  "eligible_collateral": "0.00097278",
+                  "borrowing_base": "-0.001221776"
+                }
+              },
+              {
+                "cohort_id": "16ad4678c94d62a5",
+                "provider": "Lakeside Imaging Partners",
+                "payer": "Aetna / CVS",
+                "age": "61-90",
+                "inputs_exact": {
+                  "provider": "Lakeside Imaging Partners",
+                  "payer": "Aetna / CVS",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "61-90",
+                  "gross_ar": "3585",
+                  "contractual_adjustment_rate": "0.2853",
+                  "historical_collection_factor": "0.9445",
+                  "denial_rate": "0.068"
+                },
+                "amounts_exact": {
+                  "gross_ar": "3585.00",
+                  "net_allowed": "2562.20",
+                  "expected_collectible": "2255.44",
+                  "eligible_collateral": "1804.35",
+                  "borrowing_base": "1443.48"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.0005",
+                  "expected_collectible": "0.002397337",
+                  "eligible_collateral": "-0.0000821304",
+                  "borrowing_base": "-0.00006570432"
+                }
+              }
+            ],
+            "coverage": {
+              "cohorts_returned": 4,
+              "borrower_cohorts": 24
+            },
+            "gate": "Synthetic, unvalidated factors. Legal eligibility unreviewed. Human review required."
+          }
+        },
+        {
+          "step": 2,
+          "tool": "read_review_evidence",
+          "call_id": "call_p8hnnC1AYM9grFSL1FbgVtSV",
+          "arguments": {
+            "borrower_id": "b1"
+          },
+          "result": {
+            "analysis_id": "eb70906f3a2b4ef9",
+            "policy_id": "fd834f242bc9a5c4",
+            "borrower_id": "b1",
+            "provider": "Riverbend Community Hospital",
+            "amounts_exact": {
+              "gross_ar": "310024.00",
+              "net_allowed": "208998.59",
+              "expected_collectible": "180352.68",
+              "eligible_collateral": "149386.07",
+              "borrowing_base": "119508.85"
+            },
+            "risk_catalog": {
+              "risk:7": "Riverbend Community Hospital: Low estimated advanceability; observed ratio 0.3854825755425386421696384796015792325755425386421696384796015792 < 0.45, policy fd834f242bc9a5c4.",
+              "risk:11": "Riverbend Community Hospital: Payer concentration; observed ratio 0.2316240033029700926379893169561066240033029700926379893169561066 > 0.215, policy fd834f242bc9a5c4."
+            },
+            "flags": [
+              {
+                "evidence_id": "risk:7",
+                "provider": "Riverbend Community Hospital",
+                "code": "ADVANCEABILITY",
+                "title": "Low estimated advanceability",
+                "observed": 0.385483,
+                "threshold": 0.45,
+                "observed_exact": "0.3854825755425386421696384796015792325755425386421696384796015792",
+                "threshold_exact": "0.45",
+                "operator": "<",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "b053e203ec58b896",
+                  "9d1c7adbf8dddb39",
+                  "f1e1e13bbd665c7b",
+                  "61617b4f93250656",
+                  "ba5d68af9fd8b7f0",
+                  "c0502ddaaa392a2f",
+                  "0c9e96217c947d70",
+                  "76d1a18ba30f03d2",
+                  "908ce6aee1472a4a",
+                  "8e873149c71bb69b",
+                  "f5ac95fdf062d69f",
+                  "877a8539e5736209",
+                  "4fdf72cf1928c108",
+                  "78794b525fbab19e",
+                  "6832195c6cadb747",
+                  "26d29f90b1442412",
+                  "e4939130239fce3b",
+                  "4282fb31e0323f5f",
+                  "5d126a0287ddb2fa",
+                  "40b9d2cd6a1b9d35",
+                  "d8fbc7e7c5a41edb",
+                  "72b355c0512cab05",
+                  "5b72d5e24bc8ffa0",
+                  "bbc759e8c0879852"
+                ],
+                "severity": "high"
+              },
+              {
+                "evidence_id": "risk:11",
+                "provider": "Riverbend Community Hospital",
+                "code": "CONCENTRATION",
+                "title": "Payer concentration",
+                "observed": 0.231624,
+                "threshold": 0.215,
+                "observed_exact": "0.2316240033029700926379893169561066240033029700926379893169561066",
+                "threshold_exact": "0.215",
+                "operator": ">",
+                "policy_id": "fd834f242bc9a5c4",
+                "cohort_ids": [
+                  "ba5d68af9fd8b7f0",
+                  "c0502ddaaa392a2f",
+                  "0c9e96217c947d70",
+                  "76d1a18ba30f03d2"
+                ],
+                "severity": "medium"
+              }
+            ],
+            "question_catalog": {
+              "question:0": "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+              "question:1": "Are payer-specific assignments, account control and lender documentation legally permissible?",
+              "question:2": "Can results be reconciled to actual cash remittances and historical recoveries?"
+            },
+            "cohorts": [
+              {
+                "cohort_id": "0c9e96217c947d70",
+                "provider": "Riverbend Community Hospital",
+                "payer": "Anthem / BCBS",
+                "age": "61-90",
+                "inputs_exact": {
+                  "provider": "Riverbend Community Hospital",
+                  "payer": "Anthem / BCBS",
+                  "payer_type": "Commercial",
+                  "aging_bucket": "61-90",
+                  "gross_ar": "10794",
+                  "contractual_adjustment_rate": "0.2829",
+                  "historical_collection_factor": "0.9432",
+                  "denial_rate": "0.1024"
+                },
+                "amounts_exact": {
+                  "gross_ar": "10794.00",
+                  "net_allowed": "7740.38",
+                  "expected_collectible": "6553.13",
+                  "eligible_collateral": "5242.50",
+                  "borrowing_base": "4194.00"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.0026",
+                  "expected_collectible": "0.000170200832",
+                  "eligible_collateral": "-0.0038638393344",
+                  "borrowing_base": "-0.00309107146752"
+                }
+              },
+              {
+                "cohort_id": "26d29f90b1442412",
+                "provider": "Riverbend Community Hospital",
+                "payer": "Medicaid",
+                "age": "91+",
+                "inputs_exact": {
+                  "provider": "Riverbend Community Hospital",
+                  "payer": "Medicaid",
+                  "payer_type": "Medicaid",
+                  "aging_bucket": "91+",
+                  "gross_ar": "3489",
+                  "contractual_adjustment_rate": "0.4077",
+                  "historical_collection_factor": "0.9006",
+                  "denial_rate": "0.1347"
+                },
+                "amounts_exact": {
+                  "gross_ar": "3489.00",
+                  "net_allowed": "2066.53",
+                  "expected_collectible": "1610.43",
+                  "eligible_collateral": "0.00",
+                  "borrowing_base": "0.00"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "PAYER_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "-0.0047",
+                  "expected_collectible": "0.001868195454",
+                  "eligible_collateral": "0",
+                  "borrowing_base": "0"
+                }
+              },
+              {
+                "cohort_id": "40b9d2cd6a1b9d35",
+                "provider": "Riverbend Community Hospital",
+                "payer": "Medicare",
+                "age": "91+",
+                "inputs_exact": {
+                  "provider": "Riverbend Community Hospital",
+                  "payer": "Medicare",
+                  "payer_type": "Medicare",
+                  "aging_bucket": "91+",
+                  "gross_ar": "6655",
+                  "contractual_adjustment_rate": "0.387",
+                  "historical_collection_factor": "0.9291",
+                  "denial_rate": "0.1253"
+                },
+                "amounts_exact": {
+                  "gross_ar": "6655.00",
+                  "net_allowed": "4079.52",
+                  "expected_collectible": "3315.36",
+                  "eligible_collateral": "0.00",
+                  "borrowing_base": "0.00"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "PAYER_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "0.005",
+                  "expected_collectible": "0.00437002845",
+                  "eligible_collateral": "0",
+                  "borrowing_base": "0"
+                }
+              },
+              {
+                "cohort_id": "4282fb31e0323f5f",
+                "provider": "Riverbend Community Hospital",
+                "payer": "Medicare",
+                "age": "31-60",
+                "inputs_exact": {
+                  "provider": "Riverbend Community Hospital",
+                  "payer": "Medicare",
+                  "payer_type": "Medicare",
+                  "aging_bucket": "31-60",
+                  "gross_ar": "15032",
+                  "contractual_adjustment_rate": "0.3624",
+                  "historical_collection_factor": "0.9588",
+                  "denial_rate": "0.0866"
+                },
+                "amounts_exact": {
+                  "gross_ar": "15032.00",
+                  "net_allowed": "9584.40",
+                  "expected_collectible": "8393.71",
+                  "eligible_collateral": "7176.62",
+                  "borrowing_base": "5741.30"
+                },
+                "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                "reason_codes": [
+                  "CONTRACT_ADJUSTMENT",
+                  "COLLECTION_FACTOR",
+                  "DENIAL_HAIRCUT",
+                  "AGING_FACTOR",
+                  "PAYER_FACTOR",
+                  "ADVANCE_RATE"
+                ],
+                "rounding_adjustments": {
+                  "gross_ar": "0",
+                  "net_allowed": "-0.0032",
+                  "expected_collectible": "-0.002854905344",
+                  "eligible_collateral": "-0.00449094406912",
+                  "borrowing_base": "0.000407244744704"
+                }
+              }
+            ],
+            "coverage": {
+              "cohorts_returned": 4,
+              "borrower_cohorts": 24
+            },
+            "gate": "Synthetic, unvalidated factors. Legal eligibility unreviewed. Human review required."
+          }
+        }
+      ],
+      "max_tools": 2,
+      "deadline_seconds": 60,
+      "rule_flag_coverage": 0.16666666666666666
+    }
+  }
+}

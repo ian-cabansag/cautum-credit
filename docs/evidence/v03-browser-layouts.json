@@ -1,0 +1,142 @@
+[
+  {
+    "overflow": false,
+    "pageWidth": 1440,
+    "view": "Overview",
+    "viewport": 1440,
+    "width": 1440
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1440,
+    "view": "Portfolio ledger",
+    "viewport": 1440,
+    "width": 1440
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1440,
+    "view": "Policy lab",
+    "viewport": 1440,
+    "width": 1440
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1440,
+    "view": "Surveillance",
+    "viewport": 1440,
+    "width": 1440
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1440,
+    "view": "Credit brief",
+    "viewport": 1440,
+    "width": 1440
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1024,
+    "view": "Overview",
+    "viewport": 1024,
+    "width": 1024
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1024,
+    "view": "Portfolio ledger",
+    "viewport": 1024,
+    "width": 1024
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1024,
+    "view": "Policy lab",
+    "viewport": 1024,
+    "width": 1024
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1024,
+    "view": "Surveillance",
+    "viewport": 1024,
+    "width": 1024
+  },
+  {
+    "overflow": false,
+    "pageWidth": 1024,
+    "view": "Credit brief",
+    "viewport": 1024,
+    "width": 1024
+  },
+  {
+    "overflow": false,
+    "pageWidth": 768,
+    "view": "Overview",
+    "viewport": 768,
+    "width": 768
+  },
+  {
+    "overflow": false,
+    "pageWidth": 768,
+    "view": "Portfolio ledger",
+    "viewport": 768,
+    "width": 768
+  },
+  {
+    "overflow": false,
+    "pageWidth": 768,
+    "view": "Policy lab",
+    "viewport": 768,
+    "width": 768
+  },
+  {
+    "overflow": false,
+    "pageWidth": 768,
+    "view": "Surveillance",
+    "viewport": 768,
+    "width": 768
+  },
+  {
+    "overflow": false,
+    "pageWidth": 768,
+    "view": "Credit brief",
+    "viewport": 768,
+    "width": 768
+  },
+  {
+    "overflow": false,
+    "pageWidth": 390,
+    "view": "Overview",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "overflow": false,
+    "pageWidth": 390,
+    "view": "Portfolio ledger",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "overflow": false,
+    "pageWidth": 390,
+    "view": "Policy lab",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "overflow": false,
+    "pageWidth": 390,
+    "view": "Surveillance",
+    "viewport": 390,
+    "width": 390
+  },
+  {
+    "overflow": false,
+    "pageWidth": 390,
+    "view": "Credit brief",
+    "viewport": 390,
+    "width": 390
+  }
+]

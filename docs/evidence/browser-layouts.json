@@ -1,0 +1,102 @@
+[
+  {
+    "scroll": 1440,
+    "view": "view-overview",
+    "width": 1440
+  },
+  {
+    "scroll": 1440,
+    "view": "view-portfolio",
+    "width": 1440
+  },
+  {
+    "scroll": 1440,
+    "view": "view-policy",
+    "width": 1440
+  },
+  {
+    "scroll": 1440,
+    "view": "view-surveillance",
+    "width": 1440
+  },
+  {
+    "scroll": 1440,
+    "view": "view-memo",
+    "width": 1440
+  },
+  {
+    "scroll": 1024,
+    "view": "view-overview",
+    "width": 1024
+  },
+  {
+    "scroll": 1024,
+    "view": "view-portfolio",
+    "width": 1024
+  },
+  {
+    "scroll": 1024,
+    "view": "view-policy",
+    "width": 1024
+  },
+  {
+    "scroll": 1024,
+    "view": "view-surveillance",
+    "width": 1024
+  },
+  {
+    "scroll": 1024,
+    "view": "view-memo",
+    "width": 1024
+  },
+  {
+    "scroll": 768,
+    "view": "view-overview",
+    "width": 768
+  },
+  {
+    "scroll": 768,
+    "view": "view-portfolio",
+    "width": 768
+  },
+  {
+    "scroll": 768,
+    "view": "view-policy",
+    "width": 768
+  },
+  {
+    "scroll": 768,
+    "view": "view-surveillance",
+    "width": 768
+  },
+  {
+    "scroll": 768,
+    "view": "view-memo",
+    "width": 768
+  },
+  {
+    "scroll": 390,
+    "view": "view-overview",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "view": "view-portfolio",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "view": "view-policy",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "view": "view-surveillance",
+    "width": 390
+  },
+  {
+    "scroll": 390,
+    "view": "view-memo",
+    "width": 390
+  }
+]

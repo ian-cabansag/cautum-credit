@@ -1,0 +1,42 @@
+{
+  "protocol": "paired-synthetic-v1",
+  "role": "founder",
+  "consent": true,
+  "clarity": 5,
+  "reuse": "yes",
+  "feedback": "Seamless interface",
+  "trials": [
+    {
+      "condition": "worksheet",
+      "case": "A",
+      "elapsed_seconds": 76.89,
+      "base_answer": "12257.28",
+      "excluded_age": "91+",
+      "assistance": "none",
+      "expected_base": "12257.28",
+      "base_correct": true,
+      "age_correct": true,
+      "analysis_id": "43cf4c95610a3f02"
+    },
+    {
+      "condition": "cautum",
+      "case": "B",
+      "elapsed_seconds": 132.53,
+      "base_answer": "14309.28",
+      "excluded_age": "91+",
+      "assistance": "none",
+      "expected_base": "14309.28",
+      "base_correct": true,
+      "age_correct": true,
+      "analysis_id": "0f2abe95642597bc"
+    }
+  ],
+  "source": "participant-submitted browser observation; times self-recorded by browser",
+  "limitations": [
+    "One participant, two different synthetic cases; no statistical inference.",
+    "Order and learning effects are possible; browser timing is not independently observed.",
+    "Founder participation, if selected, is not independent buyer validation.",
+    "Compares worksheet calculation with Cautum, not AI quality or real lending outcomes."
+  ],
+  "collected_at_utc": "2026-10-26T01:07:49.522320+00:00"
+}
