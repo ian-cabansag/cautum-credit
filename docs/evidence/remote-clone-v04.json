@@ -1,0 +1,354 @@
+{
+  "started_at": "2026-10-26T04:20:30.371177+00:00",
+  "platform": "macOS arm64",
+  "python": "3.12.14",
+  "install_cache": false,
+  "env_location": "parent of clone; launch environment credentials removed; no .env inside clone",
+  "checks": {
+    "status_parent_env": "passed",
+    "application_and_exercise_routes": "passed",
+    "exact_analysis_and_sensitivity": "passed",
+    "deterministic_memo": "passed",
+    "scoped_certificate": "passed",
+    "two_period_surveillance": "passed",
+    "change_desk_examples_pair_packet_and_reviewer_kit": "passed",
+    "fresh_memory_and_request_guardrails": "passed",
+    "live_one_borrower_tool_investigation": "passed",
+    "tests_107": "passed",
+    "lint_and_format": "passed",
+    "dependency_consistency": "passed",
+    "generation_no_diff": "passed",
+    "frontend_610_positions": "passed"
+  },
+  "remote_commit": "896affc9d82778a3bc80167e0e7f9b922e34cc69",
+  "tree_sha": "5b34a43c320d1af5ee8cef85a338cadc6b1e13f7",
+  "runtime_ready_seconds": 18.48,
+  "runtime_ready_at": "2026-10-26T04:20:48.863109+00:00",
+  "single_borrower_live_receipt": {
+    "analysis_id": "43cf4c95610a3f02",
+    "memo": {
+      "headline": "Preliminary collateral review",
+      "executive_summary": "Across 1 provider borrowers, gross A/R is $28,000 and the illustrative borrowing base is $12,257 (43.8% of gross A/R). 3 policy flags require review.",
+      "positives": [
+        "$15,322 calculated eligible collateral under the selected demo policy.",
+        "All financial calculations are deterministic and traced to uploaded cohort data."
+      ],
+      "risks": [
+        "Study A Clinic: Receivables aging pressure; observed ratio 0.1428571428571428571428571428571428571428571428571428571428571429 > 0.122, policy fd834f242bc9a5c4.",
+        "Illustrative, unvalidated collection assumptions and policy-adjusted collateral. Legal eligibility, reserves and undrawn availability are not established. Not a financing recommendation."
+      ],
+      "diligence_questions": [
+        "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+        "Can results be reconciled to actual cash remittances and historical recoveries?"
+      ],
+      "limitations": [
+        "This is an illustrative A/R cohort model, not validated credit underwriting.",
+        "No legal eligibility analysis, cash-verification, claim-level reconciliation, or live payer data.",
+        "Human credit/legal review required before any financing activity."
+      ],
+      "human_review_required": true,
+      "source": "ai",
+      "usage": {
+        "input_tokens": 2463,
+        "cached_input_tokens": 0,
+        "output_tokens": 62
+      },
+      "model": "gpt-6-luna",
+      "provider": "portkey",
+      "evidence_ids": [
+        "risk:1",
+        "risk:limitations",
+        "question:0",
+        "question:2"
+      ],
+      "selected_evidence": [
+        {
+          "evidence_id": "risk:1",
+          "provider": "Study A Clinic",
+          "code": "AGING",
+          "title": "Receivables aging pressure",
+          "observed": 0.142857,
+          "threshold": 0.122,
+          "observed_exact": "0.1428571428571428571428571428571428571428571428571428571428571429",
+          "threshold_exact": "0.122",
+          "operator": ">",
+          "policy_id": "fd834f242bc9a5c4",
+          "cohort_ids": [
+            "167161b84c2946b7"
+          ],
+          "severity": "medium"
+        }
+      ],
+      "cost": null,
+      "price_estimate": {
+        "usd": "0.0002773",
+        "rates_usd_per_million": {
+          "input": "0.10",
+          "cached_input": "0.01",
+          "output": "0.50"
+        },
+        "source_url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+        "verified_on": "2026-10-25",
+        "basis": "Observed usage \u00d7 published short-context Global Standard model rates. Excludes gateway fees, account discounts, hosting and support; not an invoice.",
+        "gateway_cache_hit": true,
+        "cache_note": "Gateway HIT responses may replay prior token counts. Reference estimate is uncached-equivalent model cost, not verified new billable usage."
+      },
+      "latency_ms": 2684.4,
+      "generation_method": "AI chose borrowers, invoked a read-only evidence tool and selected inspected evidence. Financial wording and figures are deterministic.",
+      "coverage": {
+        "included_flags": 3,
+        "total_flags": 3,
+        "borrowers_inspected": 1,
+        "borrowers_total": 1
+      },
+      "investigation": {
+        "profile": "lean",
+        "focus": "aging",
+        "calls": [
+          {
+            "turn": 1,
+            "response_id": "resp_0b6449721de3c809016adebc3aa81c81908865cfea59060cb2",
+            "returned_model": "gpt-6-luna-global",
+            "gateway_cost_header": null,
+            "gateway_provider": "azure-openai",
+            "gateway_cache_status": "HIT",
+            "gateway_retry_count": "0",
+            "header_names": [
+              "alt-svc",
+              "cf-ray",
+              "connection",
+              "content-encoding",
+              "content-type",
+              "date",
+              "server",
+              "transfer-encoding",
+              "x-portkey-cache-status",
+              "x-portkey-last-used-option-index",
+              "x-portkey-provider",
+              "x-portkey-retry-attempt-count",
+              "x-portkey-trace-id"
+            ],
+            "usage": {
+              "input_tokens": 644,
+              "cached_input_tokens": 0,
+              "output_tokens": 23
+            },
+            "latency_ms": 2128.13,
+            "service_tier": "default"
+          },
+          {
+            "turn": 2,
+            "response_id": "resp_0b6449721de3c809016adebc3c0fb8819089a0a02b1e0ef96e",
+            "returned_model": "gpt-6-luna-global",
+            "gateway_cost_header": null,
+            "gateway_provider": "azure-openai",
+            "gateway_cache_status": "HIT",
+            "gateway_retry_count": "0",
+            "header_names": [
+              "alt-svc",
+              "cf-ray",
+              "connection",
+              "content-encoding",
+              "content-type",
+              "date",
+              "server",
+              "transfer-encoding",
+              "x-portkey-cache-status",
+              "x-portkey-last-used-option-index",
+              "x-portkey-provider",
+              "x-portkey-retry-attempt-count",
+              "x-portkey-trace-id"
+            ],
+            "usage": {
+              "input_tokens": 1819,
+              "cached_input_tokens": 0,
+              "output_tokens": 39
+            },
+            "latency_ms": 392.78,
+            "service_tier": "default"
+          }
+        ],
+        "trace": [
+          {
+            "step": 1,
+            "tool": "read_review_evidence",
+            "call_id": "call_3sRv1gd26Lr1Kfu5K7GJYMu5",
+            "arguments": {
+              "borrower_id": "b0"
+            },
+            "result": {
+              "analysis_id": "43cf4c95610a3f02",
+              "policy_id": "fd834f242bc9a5c4",
+              "borrower_id": "b0",
+              "provider": "Study A Clinic",
+              "amounts_exact": {
+                "gross_ar": "28000.00",
+                "net_allowed": "22400.00",
+                "expected_collectible": "19152.00",
+                "eligible_collateral": "15321.60",
+                "borrowing_base": "12257.28"
+              },
+              "risk_catalog": {
+                "risk:0": "Study A Clinic: Low estimated advanceability; observed ratio 0.43776 < 0.45, policy fd834f242bc9a5c4.",
+                "risk:1": "Study A Clinic: Receivables aging pressure; observed ratio 0.1428571428571428571428571428571428571428571428571428571428571429 > 0.122, policy fd834f242bc9a5c4.",
+                "risk:2": "Study A Clinic: Payer concentration; observed ratio 1 > 0.215, policy fd834f242bc9a5c4."
+              },
+              "flags": [
+                {
+                  "evidence_id": "risk:0",
+                  "provider": "Study A Clinic",
+                  "code": "ADVANCEABILITY",
+                  "title": "Low estimated advanceability",
+                  "observed": 0.43776,
+                  "threshold": 0.45,
+                  "observed_exact": "0.43776",
+                  "threshold_exact": "0.45",
+                  "operator": "<",
+                  "policy_id": "fd834f242bc9a5c4",
+                  "cohort_ids": [
+                    "0073458f06985cf2",
+                    "e59c528f50640370",
+                    "55c1a80c64544ba9",
+                    "167161b84c2946b7"
+                  ],
+                  "severity": "high"
+                },
+                {
+                  "evidence_id": "risk:1",
+                  "provider": "Study A Clinic",
+                  "code": "AGING",
+                  "title": "Receivables aging pressure",
+                  "observed": 0.142857,
+                  "threshold": 0.122,
+                  "observed_exact": "0.1428571428571428571428571428571428571428571428571428571428571429",
+                  "threshold_exact": "0.122",
+                  "operator": ">",
+                  "policy_id": "fd834f242bc9a5c4",
+                  "cohort_ids": [
+                    "167161b84c2946b7"
+                  ],
+                  "severity": "medium"
+                },
+                {
+                  "evidence_id": "risk:2",
+                  "provider": "Study A Clinic",
+                  "code": "CONCENTRATION",
+                  "title": "Payer concentration",
+                  "observed": 1.0,
+                  "threshold": 0.215,
+                  "observed_exact": "1",
+                  "threshold_exact": "0.215",
+                  "operator": ">",
+                  "policy_id": "fd834f242bc9a5c4",
+                  "cohort_ids": [
+                    "0073458f06985cf2",
+                    "e59c528f50640370",
+                    "55c1a80c64544ba9",
+                    "167161b84c2946b7"
+                  ],
+                  "severity": "medium"
+                }
+              ],
+              "question_catalog": {
+                "question:0": "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+                "question:1": "Are payer-specific assignments, account control and lender documentation legally permissible?",
+                "question:2": "Can results be reconciled to actual cash remittances and historical recoveries?"
+              },
+              "cohorts": [
+                {
+                  "cohort_id": "0073458f06985cf2",
+                  "provider": "Study A Clinic",
+                  "payer": "Study Commercial",
+                  "age": "0-30",
+                  "inputs_exact": {
+                    "provider": "Study A Clinic",
+                    "payer": "Study Commercial",
+                    "payer_type": "Commercial",
+                    "aging_bucket": "0-30",
+                    "gross_ar": "10000",
+                    "contractual_adjustment_rate": "0.2",
+                    "historical_collection_factor": "0.9",
+                    "denial_rate": "0.05"
+                  },
+                  "amounts_exact": {
+                    "gross_ar": "10000.00",
+                    "net_allowed": "8000.00",
+                    "expected_collectible": "6840.00",
+                    "eligible_collateral": "6840.00",
+                    "borrowing_base": "5472.00"
+                  },
+                  "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                  "reason_codes": [
+                    "CONTRACT_ADJUSTMENT",
+                    "COLLECTION_FACTOR",
+                    "DENIAL_HAIRCUT",
+                    "ADVANCE_RATE"
+                  ],
+                  "rounding_adjustments": {
+                    "gross_ar": "0",
+                    "net_allowed": "0",
+                    "expected_collectible": "0",
+                    "eligible_collateral": "0",
+                    "borrowing_base": "0"
+                  }
+                },
+                {
+                  "cohort_id": "167161b84c2946b7",
+                  "provider": "Study A Clinic",
+                  "payer": "Study Commercial",
+                  "age": "91+",
+                  "inputs_exact": {
+                    "provider": "Study A Clinic",
+                    "payer": "Study Commercial",
+                    "payer_type": "Commercial",
+                    "aging_bucket": "91+",
+                    "gross_ar": "4000",
+                    "contractual_adjustment_rate": "0.2",
+                    "historical_collection_factor": "0.9",
+                    "denial_rate": "0.05"
+                  },
+                  "amounts_exact": {
+                    "gross_ar": "4000.00",
+                    "net_allowed": "3200.00",
+                    "expected_collectible": "2736.00",
+                    "eligible_collateral": "0.00",
+                    "borrowing_base": "0.00"
+                  },
+                  "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                  "reason_codes": [
+                    "CONTRACT_ADJUSTMENT",
+                    "COLLECTION_FACTOR",
+                    "DENIAL_HAIRCUT",
+                    "AGING_FACTOR",
+                    "ADVANCE_RATE"
+                  ],
+                  "rounding_adjustments": {
+                    "gross_ar": "0",
+                    "net_allowed": "0",
+                    "expected_collectible": "0",
+                    "eligible_collateral": "0",
+                    "borrowing_base": "0"
+                  }
+                }
+              ],
+              "coverage": {
+                "cohorts_returned": 2,
+                "borrower_cohorts": 4
+              },
+              "gate": "Synthetic, unvalidated factors. Legal eligibility unreviewed. Human review required."
+            }
+          }
+        ],
+        "max_tools": 1,
+        "deadline_seconds": 60,
+        "rule_flag_coverage": 0.3333333333333333
+      }
+    }
+  },
+  "tests_output": "........................................................................ [ 67%]\n...................................                                      [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.12/site-packages/fastapi/testclient.py:1\n  /Users/iancabansag/Documents/Codex/2026-10-25/do-x20/work/remote-clone-v04b/cautum-credit/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n107 passed, 1 warning in 1.27s",
+  "dependency_check": "No broken requirements found.",
+  "frontend_output": "610 slider positions serialize within the six-decimal ratio contract; invalid inputs reject.",
+  "all_checks_seconds": 30.89,
+  "finished_at": "2026-10-26T04:21:01.273849+00:00",
+  "status": "passed"
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-10-26T04:10:12.175340+00:00",
+  "platform": "macOS arm64",
+  "python": "3.12.14",
+  "install_cache": false,
+  "env_location": "parent of clone; launch environment credentials removed; no .env inside clone",
+  "checks": {
+    "status_parent_env": "passed",
+    "application_and_exercise_routes": "passed",
+    "exact_analysis_and_sensitivity": "passed",
+    "deterministic_memo": "passed",
+    "scoped_certificate": "passed",
+    "two_period_surveillance": "passed"
+  },
+  "remote_commit": "896affc9d82778a3bc80167e0e7f9b922e34cc69",
+  "tree_sha": "5b34a43c320d1af5ee8cef85a338cadc6b1e13f7",
+  "runtime_ready_seconds": 18.26,
+  "runtime_ready_at": "2026-10-26T04:10:30.431146+00:00",
+  "status": "failed",
+  "failure_type": "AssertionError",
+  "elapsed_seconds": 18.39
+}

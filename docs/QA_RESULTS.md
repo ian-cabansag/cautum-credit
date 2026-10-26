@@ -80,3 +80,11 @@ COMMERCIAL_VALIDATION.md contains 15 explicitly hypothetical rejection reasons a
 - Actual downloaded Meridian trace has 24 rows summing $66,889.51, identical to scoped certificate. All 41 original source files remain byte-identical to starter commit.
 - Pinned dependency advisory scan found no known vulnerabilities; limited tracked-text secret scan found no matches. Whole-request cap, >1MiB in-memory spool test, hostile Origin/Host and .env precedence tests now cover the RFC's local boundary findings.
 - RELEASE_MANIFEST.md lists tested scope and unresolved live AI, external lender/user, legal/security, platform and print checks. This remains a local synthetic pre-pilot release, with no public deployment or real-data authorization.
+
+## Final fresh public-clone verification · October 26, 2026
+
+Public candidate **896affc9d82778a3bc80167e0e7f9b922e34cc69** exactly matched local tree **5b34a43c320d1af5ee8cef85a338cadc6b1e13f7**. New remote clone, new venv and pip `--no-cache-dir`: **18.48 seconds** to healthy runtime, **30.89 seconds** to finish all checks on macOS arm64/Python 3.12.14. Git/Python were preinstalled; their installation was not timed. Network/CDN caches were uncontrolled.
+
+All 107 tests passed; Ruff lint/format, dependency consistency and 610 slider positions passed. Real HTTP verified exact analysis/sensitivity, deterministic brief, scoped certificate, default comparison, all three worked cases and original sources, paired-file import, scoped HTML packet with original factors/policy, reviewer-kit route and request guardrails. A real single-borrower Portkey investigation completed. Datasets, snapshots, reviewer kit and both HTML deliverables regenerated with **no Git diff**.
+
+The key was temporarily one folder above the clone; launch credential variables were removed and no .env existed inside the clone. Parent lookup succeeded. The temporary key copy and QA server were removed. Raw receipt: `evidence/remote-clone-v04.json`. The first harness attempt incorrectly requested `/reviewer-kit.html` rather than the existing `/static/reviewer-kit.html`; it stopped before any model call. The script was corrected and repeated in a new directory/environment with uncached installs; application code did not change. That unsuccessful measurement is retained separately. Final handoff additions contain documentation and receipts only.

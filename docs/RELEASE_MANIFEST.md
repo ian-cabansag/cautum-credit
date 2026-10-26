@@ -12,7 +12,7 @@ October 25, 2026. Author: **Ian Cabansag**. Source: https://github.com/ian-caban
 - **13** report page boxes fit, five images loaded, zero external assets. **10** slides traversed, content fit. Thirteen US Letter PDF pages reopened, rendered and visually inspected. Native local-file open, HTML print dialog and fullscreen remain unverified; see COURSE_EVIDENCE.md.
 - Portable reviewer kit has **18** files with original inputs, worked packets, reference answers and blank feedback. No independent tester has completed the upgrade.
 
-Fresh remote verification will be appended after publishing this candidate. Historical v0.3 timing (23.47s runtime, 38.90s total, 87 tests) is retained only in `evidence/remote-clone-v03.json` and is not a v0.4 setup measurement.
+Fresh remote verification is recorded below. Historical v0.3 timing (23.47s runtime, 38.90s total, 87 tests) is retained only in `evidence/remote-clone-v03.json` and is not a v0.4 setup measurement.
 
 ## Preserved functionality and evidence
 
@@ -27,3 +27,11 @@ One consented founder observation **predates Change Desk**: worksheet 76.89s, ap
 Fictional assumptions require lender agreement and independent review, including possible collection/denial double discounting. No reserves, outstandings, disputes, recoupments, actual remittances, net undrawn availability or legally enforceable collateral determination. No PHI/real healthcare records. No successful EHR, payer, bank or clearinghouse integration. No authenticated multi-tenant platform, signed immutable audit, production retention/incident controls or compliance attestation. Checksums are not signatures. See RFC_001_PREPILOT_ARCHITECTURE.md, COMMERCIAL_VALIDATION.md and IMPACT_LEDGER.md.
 
 Use README's unchanged one-command runtime on 127.0.0.1:8000. Core mode needs no key. Course Portkey is restricted to gpt-6-luna; root .env precedes parent .env with process environment precedence. Credentials are excluded from publication and archives.
+
+## Final fresh public-clone verification · October 26, 2026
+
+Public candidate **896affc9d82778a3bc80167e0e7f9b922e34cc69** exactly matched local tree **5b34a43c320d1af5ee8cef85a338cadc6b1e13f7**. New remote clone, new venv and pip `--no-cache-dir`: **18.48 seconds** to healthy runtime, **30.89 seconds** to finish all checks on macOS arm64/Python 3.12.14. Git/Python were preinstalled; their installation was not timed. Network/CDN caches were uncontrolled.
+
+All 107 tests passed; Ruff lint/format, dependency consistency and 610 slider positions passed. Real HTTP verified exact analysis/sensitivity, deterministic brief, scoped certificate, default comparison, all three worked cases and original sources, paired-file import, scoped HTML packet with original factors/policy, reviewer-kit route and request guardrails. A real single-borrower Portkey investigation completed. Datasets, snapshots, reviewer kit and both HTML deliverables regenerated with **no Git diff**.
+
+The key was temporarily one folder above the clone; launch credential variables were removed and no .env existed inside the clone. Parent lookup succeeded. The temporary key copy and QA server were removed. Raw receipt: `evidence/remote-clone-v04.json`. The first harness attempt incorrectly requested `/reviewer-kit.html` rather than the existing `/static/reviewer-kit.html`; it stopped before any model call. The script was corrected and repeated in a new directory/environment with uncached installs; application code did not change. That unsuccessful measurement is retained separately. Final handoff additions contain documentation and receipts only.
