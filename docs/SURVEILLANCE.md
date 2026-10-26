@@ -9,3 +9,7 @@ Matching uses explicit borrower ID + payer ID + aging bucket. An unmapped rename
 Actual bundled comparison: gross $1,934,634.00 → $1,900,103.63, delta −$34,530.37; illustrative base $761,801.19 → $737,495.10, delta −$24,306.09. No user impact or actual collections inferred.
 
 This study is separate from imported portfolio analysis. Production multi-snapshot imports, remittance reconciliation, restatement approvals, historical identity governance and policy-change decomposition remain future work.
+
+## Current v0.4 extension
+
+The earlier fixture-only statement is historical. Change Desk now accepts bounded constructed snapshot pairs with explicit strict identity manifests, same-policy enforcement and ordered dates. It adds exact fixed-order model-driver attribution, borrower queues, source-pair inspection and server-generated evidence packets. Three small relatable examples and all original sources are included. See CHANGE_DESK.md for the precise method, input limits and non-causal interpretation. No operational client data, remittance reconciliation, policy-change decomposition or authenticated approvals are introduced.

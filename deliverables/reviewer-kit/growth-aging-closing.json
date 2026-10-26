@@ -1,0 +1,14 @@
+{
+  "snapshot_id": "growth-aging-closing",
+  "reporting_date": "2026-09-30",
+  "revision": 1,
+  "kind": "synthetic",
+  "borrower_ids": {
+    "Example Community Clinic": "example-borrower"
+  },
+  "payer_ids": {
+    "Example Health Plan": "example-payer"
+  },
+  "source_note": "Constructed educational example; no actual healthcare data.",
+  "imported_at": null
+}

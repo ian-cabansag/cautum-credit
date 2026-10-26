@@ -1,0 +1,14 @@
+{
+  "snapshot_id": "denial-input-opening",
+  "reporting_date": "2026-08-31",
+  "revision": 1,
+  "kind": "synthetic",
+  "borrower_ids": {
+    "Example Imaging Practice": "example-borrower"
+  },
+  "payer_ids": {
+    "Example Health Plan": "example-payer"
+  },
+  "source_note": "Constructed educational example; no actual healthcare data.",
+  "imported_at": null
+}

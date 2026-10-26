@@ -1,0 +1,2 @@
+provider,payer,payer_type,aging_bucket,gross_ar,contractual_adjustment_rate,historical_collection_factor,denial_rate
+Example Therapy Group,Example Health Network,Commercial,0-30,50000,.2,.9,.05

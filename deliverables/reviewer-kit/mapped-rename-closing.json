@@ -1,0 +1,14 @@
+{
+  "snapshot_id": "mapped-rename-closing",
+  "reporting_date": "2026-09-30",
+  "revision": 1,
+  "kind": "synthetic",
+  "borrower_ids": {
+    "Example Therapy Group": "example-borrower"
+  },
+  "payer_ids": {
+    "Example Health Network": "example-payer"
+  },
+  "source_note": "Constructed educational example; no actual healthcare data.",
+  "imported_at": null
+}

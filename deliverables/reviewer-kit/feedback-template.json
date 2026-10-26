@@ -1,0 +1,18 @@
+{
+  "protocol": "change-desk-review-v1",
+  "participant_role": null,
+  "consent_to_share": false,
+  "consent_to_quote": false,
+  "observed_at": null,
+  "workflow_order": null,
+  "worksheet_seconds": null,
+  "cautum_seconds": null,
+  "assistance_used": null,
+  "answers": null,
+  "correctness_checked_against_reference": null,
+  "missing_evidence": null,
+  "confusing_steps": null,
+  "would_use_again": null,
+  "verbatim_feedback": null,
+  "limitations": "No participant has completed this template. Record all attempts, help and errors. Self-directed timing and founder participation must be labeled."
+}

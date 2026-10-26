@@ -1,0 +1,20 @@
+[
+  {
+    "example": "growth-aging",
+    "story": "More receivables, less modeled backing",
+    "metrics": "Opening illustrative base\n$43,776.00\nClosing illustrative base\n$32,832.00\nChange in illustrative base\n-$10,944.00\nBorrowers with a decrease\n1 / 1",
+    "rows": "SOURCE PAIR / continuing\nExample Health Plan / 0-30\n\nExample Community Clinic · example-borrower / example-payer\n\nORIGINAL INPUT / RESULT\tOPENING\tCLOSING\nBalance\t80000\t60000\nContract adjustment\t0.2\t0.2\nCollection assumption\t0.9\t0.9\nDenial assumption\t0.05\t0.05\nIllustrative base\t$43,776.00\t$32,832.00\nCohort fingerprint\t6b532d94c565ce2c\t6b532d94c565ce2c\nExact model steps\nBalance\nInput 80000 → 60000\n$43,776.00 → $32,832.00\n-$10,944.00\n\nFixed-order model attribution, not causal attribution. Interactions belong to the later factor in this order: balance, contract adjustment, collection, denial. Both periods use one policy. Aging buckets match identities, not individual claims; movements do not prove migration, cash receipts or actual losses. Reserves, debt and legal eligibility remain unassessed.\n\nFull accepted source and formula"
+  },
+  {
+    "example": "denial-input",
+    "story": "Same billing, a changed denial assumption",
+    "metrics": "Opening illustrative base\n$54,720.00\nClosing illustrative base\n$48,960.00\nChange in illustrative base\n-$5,760.00\nBorrowers with a decrease\n1 / 1",
+    "rows": "SOURCE PAIR / continuing\nExample Health Plan / 0-30\n\nExample Imaging Practice · example-borrower / example-payer\n\nORIGINAL INPUT / RESULT\tOPENING\tCLOSING\nBalance\t100000\t100000\nContract adjustment\t0.2\t0.2\nCollection assumption\t0.9\t0.9\nDenial assumption\t0.05\t0.15\nIllustrative base\t$54,720.00\t$48,960.00\nCohort fingerprint\t560c8c424aa2a387\t560c8c424aa2a387\nExact model steps\nDenial assumption\nInput 0.05 → 0.15\n$54,720.00 → $48,960.00\n-$5,760.00\n\nFixed-order model attribution, not causal attribution. Interactions belong to the later factor in this order: balance, contract adjustment, collection, denial. Both periods use one policy. Aging buckets match identities, not individual claims; movements do not prove migration, cash receipts or actual losses. Reserves, debt and legal eligibility remain unassessed.\n\nFull accepted source and formula"
+  },
+  {
+    "example": "mapped-rename",
+    "story": "A payer rename with continuous identity",
+    "metrics": "Opening illustrative base\n$27,360.00\nClosing illustrative base\n$27,360.00\nChange in illustrative base\n$0.00\nBorrowers with a decrease\n0 / 1",
+    "rows": "SOURCE PAIR / continuing\nExample Health Network / 0-30\n\nExample Therapy Group · example-borrower / example-payer\n\nORIGINAL INPUT / RESULT\tOPENING\tCLOSING\nBalance\t50000\t50000\nContract adjustment\t0.2\t0.2\nCollection assumption\t0.9\t0.9\nDenial assumption\t0.05\t0.05\nIllustrative base\t$27,360.00\t$27,360.00\nCohort fingerprint\t863693cb518db066\t9f488b10f8f056fb\nExact model steps\n\nNo continuing-input steps. An added/removed cohort is attributed to its identity status; an unchanged cohort contributes zero.\n\nFixed-order model attribution, not causal attribution. Interactions belong to the later factor in this order: balance, contract adjustment, collection, denial. Both periods use one policy. Aging buckets match identities, not individual claims; movements do not prove migration, cash receipts or actual losses. Reserves, debt and legal eligibility remain unassessed.\n\nFull accepted source and formula"
+  }
+]

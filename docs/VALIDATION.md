@@ -58,3 +58,7 @@ Developer QA now includes real localhost browser interactions, exact cohort-cent
 ## v0.3 founder observation
 
 See evidence/user-study.json for actual consent, role, timing, answers and feedback. The founder completed both tasks correctly, with Cautum taking longer. This is a real founder observation, not an independent lender pilot or evidence of time savings. The six fresh AI reviews and one live instruction-like label test are in AI_EVALUATION.md.
+
+## v0.4 evidence scope
+
+Change Desk has independent golden arithmetic, 64 seeded exact Fraction-reference cases, request-boundary and identity/packet tests. Three constructed workflow stories have explicit expected default-policy results. This is technical verification. The earlier founder observation predates this upgrade and does not establish its user benefit. No independent tester is currently available; the reviewer kit is prepared with blank response fields, not fabricated outcomes. See IMPACT_LEDGER.md.

@@ -1,12 +1,26 @@
+# Current v0.4 verification · October 25, 2026
+
+**107 tests passed**, Ruff lint/format and pip check passed, 610 frontend positions passed. New tests independently reference exact Fraction arithmetic for 64 seeded fixed-order comparisons; golden four-factor effects and all three worked cases are separately asserted. Coverage includes invalid manifests, duplicate JSON keys, missing acknowledgments/files, malformed/deep/control-character input, bounds, incompatible dates/taxonomies, added/removed/zero cohorts, stable rename identity, packet scope and HTML escaping.
+
+Actual localhost HTTP: 80 comparison requests, four datasets, exact gross/base/driver reconciliation and zero AI attempts (`evidence/v04-runtime.json`). A separate live unchanged-investigator smoke succeeded at 3,882 input / 0 cached / 70 output tokens. Earlier six-pair benchmark is preserved unchanged and not inflated by this smoke.
+
+Actual browser: all five views × 1440/1024/768/390 plus three worked cases at 390 =23 checks; no document overflow. Keyboard opened Meridian's paired input evidence; search/materiality and empty states worked. Four-file upload reproduced bundled review 545a6db824905555. Invalid non-synthetic manifest rejected and retained accepted comparison and export sources. Original CSVs, HTML packet and comparison JSON downloaded. Applied policy changes invalidate the old comparison explicitly and recompute on entering Changes. Evidence: v04-browser-layouts.json, v04-examples-browser.json and current screenshots.
+
+Artifact QA: all 13 report page boxes fit 816×1056px, every footer 998.41px; all5 images loaded; no external assets. All 10 slides traversed and fit. PDF companion has13 Letter pages reopened, Poppler-rendered and visually inspected; both contact sheets inspected. Native file opening, native HTML print and fullscreen remain unverified due available browser/desktop permissions. Reviewer kit is an18-file portable synthetic exercise, not a completed independent study.
+
+Fresh public-clone verification is recorded separately in RELEASE_MANIFEST.md and remote-clone-v04.json after publication. Prior clone timings below apply only to v0.3. No independent tester has completed v0.4; the prior founder exercise was slower in the app. No time-saving, adoption, model accuracy or production-readiness claim.
+
+## Historical phase evidence
+
 # QA results · 2026-10-25
 
-## Current v0.3 course release
+## Historical v0.3 course release
 
 Actual remote clone at 99b75d35aa6b09731a3e8b4fd010844699ee5b08: runtime ready in 23.47s, all verification in 38.90s, new venv and pip cache disabled. **87 tests passed**, Ruff lint/format passed, pip check passed, **610** frontend positions passed. Real HTTP verified exact analysis/scenario, deterministic memo, scoped certificate, surveillance, request guardrails, parent .env lookup and a live one-borrower tool investigation. Regeneration left no Git diff. See evidence/remote-clone-v03.json.
 
 Six fresh paired benchmark AI reviews, the separate live injection and cached matching browser receipt are preserved with their limits in AI_EVALUATION.md. Twenty responsive checks passed. Twelve report page boxes fit and all embedded images loaded; all ten slides were traversed. The twelve-page Letter PDF companion was visually inspected. Direct file opening, native HTML print and native fullscreen remain unverified because of the available browser/desktop limits; COURSE_EVIDENCE.md distinguishes these checks. No model accuracy, faster founder performance, independent lender validation or production readiness is inferred.
 
-The phase records below are historical checkpoints; earlier missing-AI/user-evidence statements are superseded by this current result.
+The phase records below are historical checkpoints; earlier missing-AI/user-evidence statements are superseded by subsequent recorded results.
 
 
 ## Prompt 1 · runtime and interactions

@@ -1,0 +1,47 @@
+{
+  "growth-aging": {
+    "gross_delta": "20000.00",
+    "base_opening": "43776.00",
+    "base_closing": "32832.00",
+    "base_delta": "-10944.00",
+    "effects": {
+      "gross_ar": "-10944.00",
+      "contractual_adjustment_rate": "0.00",
+      "historical_collection_factor": "0.00",
+      "denial_rate": "0.00",
+      "added": "0.00",
+      "removed": "0.00"
+    },
+    "review_id": "3e5e5eb4ada65f25"
+  },
+  "denial-input": {
+    "gross_delta": "0.00",
+    "base_opening": "54720.00",
+    "base_closing": "48960.00",
+    "base_delta": "-5760.00",
+    "effects": {
+      "gross_ar": "0.00",
+      "contractual_adjustment_rate": "0.00",
+      "historical_collection_factor": "0.00",
+      "denial_rate": "-5760.00",
+      "added": "0.00",
+      "removed": "0.00"
+    },
+    "review_id": "0d31ce031f436dea"
+  },
+  "mapped-rename": {
+    "gross_delta": "0.00",
+    "base_opening": "27360.00",
+    "base_closing": "27360.00",
+    "base_delta": "0.00",
+    "effects": {
+      "gross_ar": "0.00",
+      "contractual_adjustment_rate": "0.00",
+      "historical_collection_factor": "0.00",
+      "denial_rate": "0.00",
+      "added": "0.00",
+      "removed": "0.00"
+    },
+    "review_id": "2676150d67d7593c"
+  }
+}

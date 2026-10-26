@@ -1,3 +1,15 @@
+# Cautum Credit v0.4 · explain the change
+
+October 25, 2026. Author: Ian Cabansag. This release preserves the working FastAPI/static application, Decimal financial engine and bounded read-only AI investigator.
+
+The new Change Desk compares two explicitly mapped synthetic schedules under the same applied policy. It ranks borrower changes, reconciles fixed-order input contributions exactly to cohort cents, exposes both original inputs and policy factors, and exports a server-generated review packet. Strict paired uploads require two CSVs, two identity manifests and synthetic-only confirmation. Rejected imports retain the last accepted comparison and its export sources.
+
+Three constructed lender questions make the mechanics tangible: clinic receivables grow $20,000 while illustrative base falls $10,944; an imaging denial-input change reduces base $5,760; an explicitly mapped payer rename leaves $27,360 unchanged. These are worked examples, not customer outcomes. Contributions are order-dependent model variance, not causal cash losses.
+
+All deliverables now reflect v0.4: thirteen-page report, ten-slide self-contained reveal.js deck, an eighteen-file portable reviewer kit, source-backed packets and current validation records. The new comparison path makes zero AI calls. The 107-test suite includes 64 seeded comparisons against an independent Fraction reference. No independent tester has completed the upgrade; the earlier founder exercise predates it and showed slower app performance. Customer impact, lender-approved assumptions, legal eligibility and enterprise deployment remain open gates.
+
+## Historical v0.3 release
+
 # Cautum Credit v0.3 · measured course release
 
 October 25, 2026. Author: Ian Cabansag. Preserves the existing FastAPI/static application and Decimal engine. Adds a bounded, live Portkey investigator with one read-only function tool, source-linked receipts, explicit quick/broader cost and coverage tradeoffs, and a consented synthetic founder exercise. Both twelve-page report and ten-slide reveal.js presentation embed all assets.

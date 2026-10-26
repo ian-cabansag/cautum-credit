@@ -39,3 +39,7 @@ Fancy conversation sidebar, generic AI chatbot, live EHR integrations, directly 
 4. Download trace CSV.
 5. Generate deterministic credit brief; optionally real structured AI risk commentary with token usage, if a tested key exists.
 6. Show a failed upload containing patient_name or hostile formula as evidence of safety.
+
+## v0.4 workflow expansion
+
+A reviewer can now start with “what changed between these two schedules?” and reconstruct the answer in Change Desk. The wedge extends to explicit same-policy variance explanation and a source-backed handoff packet. Constructed cases make the job understandable to a clinic finance operator and a lender: more receivables with less modeled backing, a changed denial input, or a deliberately mapped payer rename. The current kit makes independent review possible without founder coaching; no such independent review has occurred.

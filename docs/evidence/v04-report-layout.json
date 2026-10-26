@@ -1,0 +1,148 @@
+{
+  "externalAssets": 0,
+  "images": [
+    {
+      "alt": "Actual live AI investigation with borrower evidence and source links",
+      "loaded": true
+    },
+    {
+      "alt": "Actual application overview with cent-reconciling financial stages",
+      "loaded": true
+    },
+    {
+      "alt": "Actual Change Desk showing the constructed clinic example and reconciled model base",
+      "loaded": true
+    },
+    {
+      "alt": "Actual prohibited patient_name-header rejection",
+      "loaded": true
+    },
+    {
+      "alt": "Actual recorded founder timing, correct answers and consented feedback",
+      "loaded": true
+    }
+  ],
+  "pages": [
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 1,
+      "width": 816,
+      "x": 232,
+      "y": 24
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 2,
+      "width": 816,
+      "x": 232,
+      "y": 1104
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 3,
+      "width": 816,
+      "x": 232,
+      "y": 2184
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 4,
+      "width": 816,
+      "x": 232,
+      "y": 3264
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 5,
+      "width": 816,
+      "x": 232,
+      "y": 4344
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 6,
+      "width": 816,
+      "x": 232,
+      "y": 5424
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 7,
+      "width": 816,
+      "x": 232,
+      "y": 6504
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 8,
+      "width": 816,
+      "x": 232,
+      "y": 7584
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 9,
+      "width": 816,
+      "x": 232,
+      "y": 8664
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 10,
+      "width": 816,
+      "x": 232,
+      "y": 9744
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 11,
+      "width": 816,
+      "x": 232,
+      "y": 10824
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 12,
+      "width": 816,
+      "x": 232,
+      "y": 11904
+    },
+    {
+      "footerBottom": 998.40625,
+      "height": 1056,
+      "overflow": false,
+      "page": 13,
+      "width": 816,
+      "x": 232,
+      "y": 12984
+    }
+  ],
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}

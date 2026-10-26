@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent
 app = FastAPI(
     title="Cautum Credit",
     description="Illustrative lender-side receivables monitoring",
-    version="0.3.0",
+    version="0.4.0",
     docs_url="/api/docs",
     redoc_url=None,
 )
@@ -87,7 +87,7 @@ def status():
     credentials = provider()
     return {
         "ok": True,
-        "version": "0.3.0",
+        "version": "0.4.0",
         "demo_only": True,
         "ai_usage": usage_snapshot(),
         "ai_method": "bounded read-only borrower investigation; deterministic financial wording",
@@ -188,22 +188,65 @@ async def certificate_upload(
 
 
 @app.post("/api/surveillance")
-def synthetic_surveillance(policy: str = Form("{}")):
-    from .surveillance import compare, snapshot
+async def synthetic_surveillance(
+    policy: str = Form("{}"),
+    opening: UploadFile | None = File(None),
+    closing: UploadFile | None = File(None),
+    opening_manifest: str = Form(""),
+    closing_manifest: str = Form(""),
+    synthetic: bool = Form(False),
+    output_format: str = Form("json"),
+    borrower: str = Form(""),
+    example: str = Form("portfolio"),
+):
+    from fastapi.responses import HTMLResponse
 
+    from .change_review import render_packet
+    from .snapshot_io import read_pair
+
+    if output_format not in ("json", "html"):
+        raise HTTPException(status_code=400, detail="output_format must be json or html")
     try:
         p = Policy.model_validate(json.loads(policy))
-        periods = [
-            snapshot(
-                (ROOT / "data" / f"synthetic_{t}.csv").read_bytes(),
-                json.loads((ROOT / "data" / f"synthetic_{t}.json").read_text()),
-                p,
+        result = await read_pair(
+            p, opening, closing, opening_manifest, closing_manifest, synthetic, example
+        )
+        if output_format == "html":
+            html = render_packet(result, borrower)
+            return HTMLResponse(
+                html,
+                headers={
+                    "Content-Disposition": 'attachment; filename="cautum-change-'
+                    + result["change_review"]["review_id"]
+                    + '.html"'
+                },
             )
-            for t in ("T0", "T1")
-        ]
-        return compare(*periods)
-    except (json.JSONDecodeError, ValidationError, DataError) as exc:
-        raise HTTPException(
-            status_code=400,
-            detail="Invalid synthetic comparison policy or snapshot contract.",
-        ) from exc
+        return result
+    except (json.JSONDecodeError, ValidationError, DataError, TypeError) as exc:
+        detail = (
+            str(exc)
+            if isinstance(exc, DataError)
+            else "Invalid comparison policy or snapshot contract."
+        )
+        raise HTTPException(status_code=400, detail=detail) from None
+
+
+@app.get("/api/examples/{name}/{source}")
+def example_source(name: str, source: str):
+    from fastapi.responses import JSONResponse, PlainTextResponse
+
+    from .examples import EXAMPLES, example_sources
+
+    if name not in EXAMPLES or source not in (
+        "opening.csv",
+        "closing.csv",
+        "opening.json",
+        "closing.json",
+    ):
+        raise HTTPException(status_code=404, detail="Unknown constructed example source.")
+    pair = example_sources(name)
+    raw, manifest = pair[0 if source.startswith("opening") else 1]
+    headers = {"Content-Disposition": f'attachment; filename="{name}-{source}"'}
+    if source.endswith(".csv"):
+        return PlainTextResponse(raw.decode(), media_type="text/csv", headers=headers)
+    return JSONResponse(manifest, headers=headers)

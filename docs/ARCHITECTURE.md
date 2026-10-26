@@ -58,3 +58,7 @@ Optional AI now returns evidence ID selection only. Python supplies the financia
 
 ## Model architecture choices
 v0.1 is one bounded structured output call, not a fake multi-agent swarm. Deterministic data-validation and underwriting modules are 'tools' of an orchestrated workflow, but they are **not** separately generative agents. For MGT 409, describe this accurately. If building a true tool-calling model agent in v0.2, expose read-only functions `get_summary`, `get_borrower_flags` and `get_policy`, preserve bounded tool depth and disallow raw uploads/secret access. Test refusal, prompt injection and hallucination cases before deploying.
+
+## v0.4 Change Desk
+
+snapshot_io.py validates bounded constructed pairs and strict JSON manifests; examples.py provides three fixed cases. surveillance.compare adds change_review.build_review. Fixed-order counterfactuals operate at cohort cents under a 64-digit Decimal context; aggregates reconcile or reject. The AI investigator is unchanged and does not produce these contributions. HTML packets are regenerated from accepted server inputs, with factors, policy parameters and source hashes. No database, external tool/write action, new dependency, PHI permission or enterprise-security claim is added.

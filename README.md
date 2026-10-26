@@ -2,7 +2,7 @@
 
 **Policy intelligence for healthcare receivables-backed credit.**
 
-By Ian Cabansag · [GitHub](https://github.com/ian-cabansag/cautum-credit) · MGT 409 · v0.3.0
+By Ian Cabansag · [GitHub](https://github.com/ian-cabansag/cautum-credit) · MGT 409 · v0.4.0
 
 A working lender-side, synthetic-data pre-pilot demonstration. Cautum is a sole-founder software venture, not a lender, receivables purchaser, credit rating agency or validated underwriting model. No patient data or real healthcare files are permitted. Real deployment remains subject to independent lender, privacy/security and legal gates.
 
@@ -23,7 +23,7 @@ On Windows use `.venv\Scripts\Activate.ps1` after creating the environment. Depe
 
 Open **http://127.0.0.1:8000**. The included fictional portfolio auto-loads, with no secret or external service needed. A local course demo uses the same command; `--reload` is optional during development. See docs/RELEASE_MANIFEST.md for clean-clone results and known limits.
 
-Verified from the public GitHub clone on the tested host: **23.47 seconds** to healthy runtime with a new environment and pip cache disabled; **38.90 seconds** including 87 tests, HTTP checks, a real AI tool review and reproducible artifact generation. Git and Python were already installed. Raw evidence: docs/evidence/remote-clone-v03.json.
+Historical v0.3 verification from the public GitHub clone on the tested host: **23.47 seconds** to healthy runtime with a new environment and pip cache disabled; **38.90 seconds** including 87 tests, HTTP checks, a real AI tool review and reproducible artifact generation. Git and Python were already installed. Raw evidence: docs/evidence/remote-clone-v03.json.
 
 ## Demonstrated capabilities
 
@@ -37,6 +37,18 @@ Verified from the public GitHub clone on the tested host: **23.47 seconds** to h
 - Responsive interface inspected at 1440/1024/768/390px; real localhost interactions and evidence screenshots recorded in docs/QA_RESULTS.md.
 
 **Not implemented or validated:** real-data permission, recovery calibration, lender-approved policy, legal eligibility, reserves/outstandings/net undrawn availability, authenticated approvals, tenant security, durable audit storage, claims/EHR/banking integrations, independent user time savings, paid adoption or compliance attestation.
+
+## Start with a relatable lender question
+
+Open **Changes → Explore a lender question**. All examples are constructed, with source CSVs and explicit identity maps:
+
+- A community clinic reports $20,000 more receivables, while the illustrative base falls $10,944 because the balance mix changes under the default policy.
+- An imaging practice reports unchanged billing, while a changed denial assumption lowers the model base $5,760. Review the rate definition and potential double counting.
+- A therapy group's payer changes its label. An explicit stable identity map preserves the same $27,360 modeled base.
+
+The new **Change Desk** reconciles fixed-order input contributions to source-cohort cents, ranks borrower changes, filters by materiality, opens paired original inputs and exports a server-generated review packet. Uploading a constructed pair requires both eight-field CSVs, two strict identity manifests and synthetic-only confirmation. Both periods use the same applied policy. Failed imports retain the accepted comparison and its export sources. Contributions explain model changes, not causal losses or actual cash receipts.
+
+Use the **worked examples and reviewer kit** link in Changes, or open `deliverables/reviewer-kit/START_HERE.html`. The portable kit includes original sources, worked packets, independently asserted reference answers and an empty future-review feedback template. No independent tester has completed this upgrade. Rebuild it with `python -m scripts.build_reviewer_kit`.
 
 ## CSV contract
 
@@ -76,7 +88,7 @@ Reproduce live evidence with `python -m scripts.evaluate_ai --pairs 3` using an 
 
 ## Human observation
 
-`http://127.0.0.1:8000/study` runs two synthetic worksheet/application tasks with consent, browser timing, answer checks and feedback. Observations stay in process memory until exported. The recorded founder exercise had correct answers in both conditions, but the app task took longer: 132.53s versus 76.89s. This is not independent lender validation or evidence of time savings. See docs/evidence/user-study.json.
+`http://127.0.0.1:8000/study` runs two synthetic worksheet/application tasks with consent, browser timing, answer checks and feedback. Observations stay in process memory until exported. The recorded baseline founder exercise, completed before Change Desk existed, had correct answers in both conditions, but the app task took longer: 132.53s versus 76.89s. This is not independent lender validation or evidence of time savings. See docs/evidence/user-study.json.
 
 ## Verify and reproduce
 
@@ -89,7 +101,7 @@ python -m scripts.check_release
 python -m scripts.benchmark --url http://127.0.0.1:8000
 ```
 
-Regenerate included data: `python -m scripts.generate_data`, then `python -m scripts.generate_snapshots`. Rebuild embedded HTML evidence: `python -m scripts.build_evidence_package`. Existing screenshots document actual previous runs and must be recaptured after material UI changes. Benchmark measures local software only, never analyst impact.
+Regenerate included data: `python -m scripts.generate_data`, then `python -m scripts.generate_snapshots`. Rebuild embedded HTML evidence: `python -m scripts.build_evidence_package`. Rebuild the portable case kit with `python -m scripts.build_reviewer_kit`. Existing screenshots document actual previous runs and must be recaptured after material UI changes. Benchmark measures local software only, never analyst impact.
 
 ## Security and deployment boundary
 

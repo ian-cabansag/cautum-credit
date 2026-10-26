@@ -87,7 +87,7 @@ def build(reveal_path):
     page(
         "1. Title + links",
         "Cautum Credit",
-        f'''<p class="coverline">Policy intelligence for healthcare receivables-backed credit.</p><p class="lead">A lender review workspace that connects deterministic collateral calculations to source evidence and gives one AI investigator bounded, read-only tools.</p><div class="rule"></div><p><strong>{author}</strong><br>MGT 409 · AI Foundations for Managers<br>October 25, 2026 · v0.3.0</p><p>Repository: <a href="{repo}">{repo}</a><br>Delivery: local clone. No hosted application.<br>After startup: <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p><p class="notice">Synthetic data only. Financial policy factors are unvalidated. This is review software, not a lender, credit approval system, validated valuation model or compliance attestation.</p><p>Evidence includes real Portkey tool-calling runs, provider token counts, live and automated safety checks, and a consented founder exercise that did not demonstrate faster review.</p><p class="source">Prepared against the <a href="{COURSE}">published final-project requirements</a>. Every screenshot, diagram, script and style is embedded in this file. The accompanying repository preserves raw evidence and reproduction scripts.</p>''',
+        f'''<p class="coverline">Policy intelligence for healthcare receivables-backed credit.</p><p class="lead">A lender review workspace that explains changes between receivables schedules, preserves source evidence and gives one AI investigator bounded, read-only tools.</p><div class="rule"></div><p><strong>{author}</strong><br>MGT 409 · AI Foundations for Managers<br>October 25, 2026 · v0.4.0</p><p>Repository: <a href="{repo}">{repo}</a><br>Delivery: local clone. No hosted application.<br>After startup: <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p><p class="notice">Synthetic data only. Financial policy factors are unvalidated. This is review software, not a lender, credit approval system, validated valuation model or compliance attestation.</p><p>Evidence includes real Portkey tool-calling runs, provider token counts, live and automated safety checks, and a consented founder exercise that did not demonstrate faster review.</p><p class="source">Prepared against the <a href="{COURSE}">published final-project requirements</a>. Every screenshot, diagram, script and style is embedded in this file. The accompanying repository preserves raw evidence and reproduction scripts.</p>''',
         True,
     )
     page(
@@ -155,7 +155,7 @@ def build(reveal_path):
                 ],
             ],
         )
-        + """<h3>What is implemented</h3><p>The application combines visible policy factors, cohort-level cent reconciliation, exception-to-source navigation, dated synthetic monitoring and a tool-using AI investigator. The investigator can choose a borrower to inspect, but it cannot invent delivered financial wording, change amounts or approve credit.</p><h3>What is not established</h3><p>This combination is a product hypothesis, not a proven moat. Switching value depends on data compatibility, credit-officer agreement and a workflow benefit that exceeds the integration and governance burden. Aggregate data may be insufficient for the intended buyer.</p><p class="source">Primary sources: <a href="https://www.orcho.ai/product">Orcho product</a>; <a href="https://klaim.com/">Klaim</a>; <a href="https://www.medliquidity.com/">MedLiquidity</a>. Public company claims are attributed, not endorsed. No comparative accuracy or traction claim is reproduced.</p>""",
+        + """<h3>What is implemented</h3><p>The application combines visible policy factors, cohort-level cent reconciliation, paired snapshot attribution, source-owner questions, reproducible review packets and a tool-using AI investigator. The investigator can choose a borrower to inspect, but it cannot invent delivered financial wording, change amounts or approve credit.</p><h3>What is not established</h3><p>This combination is a product hypothesis, not a proven moat. Switching value depends on data compatibility, credit-officer agreement and a workflow benefit that exceeds the integration and governance burden. Aggregate data may be insufficient for the intended buyer.</p><p class="source">Primary sources: <a href="https://www.orcho.ai/product">Orcho product</a>; <a href="https://klaim.com/">Klaim</a>; <a href="https://www.medliquidity.com/">MedLiquidity</a>. Public company claims are attributed, not endorsed. No comparative accuracy or traction claim is reproduced.</p>""",
     )
     page(
         "4. The agents",
@@ -217,13 +217,43 @@ def build(reveal_path):
         "4. The agents / financial authority",
         "The financial answer remains reproducible",
         screenshot(
-            "final-overview.png",
+            "v04-overview.png",
             "Actual application overview with cent-reconciling financial stages",
             "screen-compact",
         )
         + table(["Stage", "USD, exact cohort cents"], list(a["summary_exact"].items()))
         + """<p class="formula">N = G × (1 − contract)<br>E = N × collection × (1 − denial)<br>C = E × aging factor × payer factor<br>B = C × advance rate</p><p>Each stage uses the full original Decimal chain, rounds each cohort HALF_UP to cents, then aggregates. Intermediate rounded values are not chained. Original inputs, unrounded results, adjustments and policy reasons remain inspectable.</p>"""
         + f"""<p>Changing advance from 80% to 70% changes the illustrative base from $761,801.19 to ${low["summary"]["borrowing_base"]:,.2f}; policy-adjusted collateral remains $952,251.44. These are fictional sensitivity factors, not lender standards.</p><p class="notice">Collection factors and denial rates may double-count losses. “Policy-adjusted collateral” does not establish legally enforceable collateral. Reserves, debt outstandings and net undrawn availability are unassessed.</p>""",
+    )
+    runtime = json.loads((E / "v04-runtime.json").read_text())
+    cases = runtime["cases"]
+    page(
+        "4. The agents / deterministic change review",
+        "More receivables can mean less modeled backing",
+        """<p class="lead">A fictional clinic reports $20,000 more receivables, but its illustrative base falls $10,944. Younger balances shrink while the excluded 91+ bucket grows.</p>"""
+        + screenshot(
+            "change-case-v04.png",
+            "Actual Change Desk showing the constructed clinic example and reconciled model base",
+            "screen-compact",
+        )
+        + table(
+            ["Constructed review question", "Observed default-policy model result"],
+            [
+                [
+                    "More receivables; different aging-bucket balances",
+                    f"Gross +$20,000; base decreases ${abs(Decimal(cases['growth-aging']['base_delta'])):,.2f}",
+                ],
+                [
+                    "Same billing; denial input changes 5% to 15%",
+                    f"Base decreases ${abs(Decimal(cases['denial-input']['base_delta'])):,.2f}",
+                ],
+                [
+                    "Explicitly mapped payer rename; unchanged economics",
+                    "Base unchanged at $27,360",
+                ],
+            ],
+        )
+        + """<p>Change Desk validates two CSVs and identity manifests, ranks borrower changes, opens paired original inputs and exports a server-generated evidence packet. Contributions replace balance, contract, collection and denial in that order; cohort-cent differences must reconcile.</p><p>The 192-identity portfolio splits its $24,306.09 base decline into $22,854.10 from cohort balances and $1,451.99 from a denial input. These are order-dependent model effects, not causal losses, cash receipts or claim migration. One policy applies to both periods.</p><p class="notice">Three worked cases, original sources and an empty reviewer protocol are provided. Independent usefulness and time savings remain unmeasured; nobody independent has completed this upgrade.</p><p class="source">Evidence: golden cases and 64 exact Fraction-reference comparisons in tests/test_change_review.py; actual HTTP receipts in v04-runtime.json. Comparison uses zero model calls. The <a href="https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/asset-based-lending/pub-ch-asset-based-lending.pdf">OCC ABL handbook</a> grounds the monitoring/reconciliation workflow, not Cautum's financial assumptions.</p>""",
     )
     token_rows = []
     for p in ("standard", "lean"):
@@ -326,7 +356,7 @@ def build(reveal_path):
     )
     page(
         "7. Impact",
-        "Correct answers, no speed gain",
+        "A baseline observation, with limits",
         screenshot(
             "founder-observation.png",
             "Actual recorded founder timing, correct answers and consented feedback",
@@ -349,7 +379,7 @@ def build(reveal_path):
                 ["Additional help", "None, self-reported", "None, self-reported"],
             ],
         )
-        + f"""<p>Participant: {author}, founder/project author; consent recorded. Clarity: {user["clarity"]}/5. Would use again: {escape(user["reuse"])}. Feedback, faithfully quoted: <strong>“{escape(user["feedback"])}”</strong>.</p><p>Cautum took {app_user["elapsed_seconds"] - base_user["elapsed_seconds"]:.2f} seconds longer in this exercise. No time saving is claimed. Next test: distinguish tab-switching/onboarding time from evidence-reconstruction time and observe independent analysts on larger, comparable tasks.</p><p class="notice">One founder, two different synthetic cases, worksheet first; learning, order and case effects are unresolved. Timing is browser-recorded and not independently observed. This is not an independent buyer pilot, statistical estimate, lender validation or evidence of customer demand.</p><p class="source">Raw participant submission: docs/evidence/user-study.json. Sample data: study_A.csv and study_B.csv. The in-app exercise at /study can reproduce the protocol.</p>""",
+        + f"""<p>Baseline participant: {author}, founder/project author; consent recorded. This exercise predates the v0.4 Change Desk. Clarity: {user["clarity"]}/5. Would use again: {escape(user["reuse"])}. Feedback, faithfully quoted: <strong>“{escape(user["feedback"])}”</strong>.</p><p>Cautum took {app_user["elapsed_seconds"] - base_user["elapsed_seconds"]:.2f} seconds longer in this exercise. No time saving is claimed. Next test: distinguish tab-switching/onboarding time from evidence-reconstruction time and observe independent analysts on larger, comparable tasks.</p><p class="notice">One founder, two different synthetic cases, worksheet first; learning, order and case effects are unresolved. No independent reviewer is currently available. Timing is browser-recorded and not independently observed. This is not an independent buyer pilot, statistical estimate, lender validation or evidence of customer demand.</p><p class="source">Raw participant submission: docs/evidence/user-study.json. Sample data: study_A.csv and study_B.csv. The in-app exercise at /study can reproduce the protocol.</p>""",
     )
     page(
         "8. Limits + next steps",
@@ -439,12 +469,12 @@ python -m uvicorn cautum.api:app --host 127.0.0.1 --port 8000</pre><p>On Windows
         ),
         (
             "Existing products overlap",
-            '<p>Orcho: receivables review and monitoring.<br>Klaim: healthcare treasury, acceleration and recovery.<br>MedLiquidity: valuation, underwriting and monitoring.</p><p class="big">Cautum tests visible policy evidence and source-linked borrower investigation.</p><p class="small">A differentiation hypothesis, not a proven moat. Primary product pages are linked in the report.</p>',
+            '<p>Orcho: receivables review and monitoring.<br>Klaim: healthcare treasury, acceleration and recovery.<br>MedLiquidity: valuation, underwriting and monitoring.</p><p class="big">Cautum tests paired change explanations, source-backed review packets and bounded borrower investigation.</p><p class="small">A differentiation hypothesis, not a proven moat. Primary product pages are linked in the report.</p>',
         ),
         (
             "The model chooses where to look",
             diagram()
-            + '<p class="small">One agent, one read-only tool. Financial calculations remain in Python. Course model: gpt-6-luna; observed route: Azure through Portkey.</p>',
+            + '<p class="small">One agent, one read-only tool. Financial calculations and Change Desk stay deterministic in Python. Course model: gpt-6-luna; observed route: Azure through Portkey.</p>',
         ),
         (
             "A real investigation, with a receipt",
@@ -452,11 +482,11 @@ python -m uvicorn cautum.api:app --host 127.0.0.1 --port 8000</pre><p>On Windows
             + '<p class="small">The model requests borrower evidence; the server returns exact sources. Only inspected evidence IDs can enter the final review.</p>',
         ),
         (
-            "Every financial stage reconciles",
+            "A bigger balance can hide a smaller base",
             screenshot(
-                "final-overview.png", "Actual overview with exact financial bridge", "slide-screen"
+                "change-case-v04.png", "Actual constructed clinic change review", "slide-screen"
             )
-            + '<p class="small">192 fictional cohorts · 8 borrowers · $761,801.19 illustrative base.<br>70% advance scenario: $666,576.03. Policy factors remain unvalidated.</p>',
+            + '<p class="small">Constructed clinic: receivables +$20,000; illustrative base −$10,944.<br>Inspect both sources, fixed-order model drivers and a reproducible evidence packet. No actual customer loss or cash recovery is claimed.</p>',
         ),
         (
             "A cheaper pass selects fewer flags",
@@ -472,7 +502,7 @@ python -m uvicorn cautum.api:app --host 127.0.0.1 --port 8000</pre><p>On Windows
                     ["Existing flags selected", "5 of 12", "3 of 12"],
                 ],
             )
-            + f'<p>At 50 reviews/user/month and 100 users: ${costs["standard"] * 5000:.3f} broader / ${costs["lean"] * 5000:.3f} quick.</p><p class="small">Three fresh runs/profile. Published Azure model rates × observed tokens; excludes gateway fees, hosting and support. Coverage is not expert-validated accuracy.</p>',
+            + f'<p>At 50 reviews/user/month and 100 users: ${costs["standard"] * 5000:.3f} broader / ${costs["lean"] * 5000:.3f} quick.</p><p class="small">Three fresh recorded runs/profile. Change Desk itself makes zero model calls. Published Azure model rates × observed tokens; excludes gateway fees, hosting and support. Coverage is not expert-validated accuracy.</p>',
         ),
         (
             "A working rejection boundary",
@@ -488,7 +518,7 @@ python -m uvicorn cautum.api:app --host 127.0.0.1 --port 8000</pre><p>On Windows
                     ["Base and aging answers", "Both correct", "Both correct"],
                 ],
             )
-            + f'<p class="big">“{escape(user["feedback"])}”</p><p>Clarity {user["clarity"]}/5. Would use again: {escape(user["reuse"])}.</p><p class="small">One consenting founder, different synthetic cases, worksheet first. Timing is not independently observed. This does not demonstrate analyst time savings or buyer adoption.</p>',
+            + f'<p class="big">“{escape(user["feedback"])}”</p><p>Clarity {user["clarity"]}/5. Would use again: {escape(user["reuse"])}.</p><p class="small">Baseline exercise before Change Desk: one founder, different synthetic cases, worksheet first. Timing is not independently observed. This does not demonstrate analyst time savings or buyer adoption.</p>',
         ),
         (
             "The next proof is independent use",

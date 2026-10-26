@@ -1,0 +1,595 @@
+{
+  "observed_at": "2026-10-26T03:25:21.121132+00:00",
+  "version": "0.4.0",
+  "source": "real localhost HTTP; bundled/constructed synthetic data",
+  "cases": {
+    "portfolio": {
+      "review_id": "545a6db824905555",
+      "gross_delta": "-34530.37",
+      "base_delta": "-24306.09",
+      "effects": {
+        "gross_ar": "-22854.10",
+        "contractual_adjustment_rate": "0.00",
+        "historical_collection_factor": "0.00",
+        "denial_rate": "-1451.99",
+        "added": "0.00",
+        "removed": "0.00"
+      },
+      "borrowers": 8,
+      "source_pairs": 192
+    },
+    "growth-aging": {
+      "review_id": "3e5e5eb4ada65f25",
+      "gross_delta": "20000.00",
+      "base_delta": "-10944.00",
+      "effects": {
+        "gross_ar": "-10944.00",
+        "contractual_adjustment_rate": "0.00",
+        "historical_collection_factor": "0.00",
+        "denial_rate": "0.00",
+        "added": "0.00",
+        "removed": "0.00"
+      },
+      "borrowers": 1,
+      "source_pairs": 2
+    },
+    "denial-input": {
+      "review_id": "0d31ce031f436dea",
+      "gross_delta": "0.00",
+      "base_delta": "-5760.00",
+      "effects": {
+        "gross_ar": "0.00",
+        "contractual_adjustment_rate": "0.00",
+        "historical_collection_factor": "0.00",
+        "denial_rate": "-5760.00",
+        "added": "0.00",
+        "removed": "0.00"
+      },
+      "borrowers": 1,
+      "source_pairs": 1
+    },
+    "mapped-rename": {
+      "review_id": "2676150d67d7593c",
+      "gross_delta": "0.00",
+      "base_delta": "0.00",
+      "effects": {
+        "gross_ar": "0.00",
+        "contractual_adjustment_rate": "0.00",
+        "historical_collection_factor": "0.00",
+        "denial_rate": "0.00",
+        "added": "0.00",
+        "removed": "0.00"
+      },
+      "borrowers": 1,
+      "source_pairs": 1
+    }
+  },
+  "local_software_benchmark": {
+    "portfolio": {
+      "runs": 20,
+      "median_http_ms": 25.59,
+      "max_http_ms": 29.89
+    },
+    "growth-aging": {
+      "runs": 20,
+      "median_http_ms": 1.09,
+      "max_http_ms": 1.28
+    },
+    "denial-input": {
+      "runs": 20,
+      "median_http_ms": 0.92,
+      "max_http_ms": 0.98
+    },
+    "mapped-rename": {
+      "runs": 20,
+      "median_http_ms": 0.89,
+      "max_http_ms": 1.01
+    }
+  },
+  "deterministic_comparison_ai_calls": 0,
+  "base_analysis_id": "eb70906f3a2b4ef9",
+  "live_ai_smoke": {
+    "http_status": 200,
+    "result": {
+      "analysis_id": "eb70906f3a2b4ef9",
+      "memo": {
+        "headline": "Preliminary collateral review",
+        "executive_summary": "Across 8 provider borrowers, gross A/R is $1,934,634 and the illustrative borrowing base is $761,801 (39.4% of gross A/R). 12 policy flags require review.",
+        "positives": [
+          "$952,251 calculated eligible collateral under the selected demo policy.",
+          "All financial calculations are deterministic and traced to uploaded cohort data."
+        ],
+        "risks": [
+          "Meridian Behavioral Health: Low estimated advanceability; observed ratio 0.369263565249554219594464042220786892123902110487294568379677934 < 0.45, policy fd834f242bc9a5c4.",
+          "Meridian Behavioral Health: Elevated denial exposure; observed ratio 0.1118424614807086114285398828549819755662653262891748508084772804 > 0.09, policy fd834f242bc9a5c4.",
+          "Meridian Behavioral Health: Payer concentration; observed ratio 0.2567750340890898351026537045317787604268450892388886128638699812 > 0.215, policy fd834f242bc9a5c4.",
+          "Illustrative, unvalidated collection assumptions and policy-adjusted collateral. Legal eligibility, reserves and undrawn availability are not established. Not a financing recommendation."
+        ],
+        "diligence_questions": [
+          "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+          "Can results be reconciled to actual cash remittances and historical recoveries?"
+        ],
+        "limitations": [
+          "This is an illustrative A/R cohort model, not validated credit underwriting.",
+          "No legal eligibility analysis, cash-verification, claim-level reconciliation, or live payer data.",
+          "Human credit/legal review required before any financing activity."
+        ],
+        "human_review_required": true,
+        "source": "ai",
+        "usage": {
+          "input_tokens": 3882,
+          "cached_input_tokens": 0,
+          "output_tokens": 70
+        },
+        "model": "gpt-6-luna",
+        "provider": "portkey",
+        "evidence_ids": [
+          "risk:3",
+          "risk:4",
+          "risk:10",
+          "risk:limitations",
+          "question:0",
+          "question:2"
+        ],
+        "selected_evidence": [
+          {
+            "evidence_id": "risk:3",
+            "provider": "Meridian Behavioral Health",
+            "code": "ADVANCEABILITY",
+            "title": "Low estimated advanceability",
+            "observed": 0.369264,
+            "threshold": 0.45,
+            "observed_exact": "0.369263565249554219594464042220786892123902110487294568379677934",
+            "threshold_exact": "0.45",
+            "operator": "<",
+            "policy_id": "fd834f242bc9a5c4",
+            "cohort_ids": [
+              "540bbe91c57f2c40",
+              "1af348b518fb58cc",
+              "3b45e3ecee0a6129",
+              "c20316191b768cc9",
+              "f25951d343443204",
+              "44d3ad94d48800dd",
+              "c2a546ff8d40e2e6",
+              "783d738bfbf9dc52",
+              "d98c4c03f2db352f",
+              "5657093c640f95cf",
+              "bca726f3a656b10f",
+              "3eb42b256799b68d",
+              "1b74864d88dc9c19",
+              "7cc6b8fb9b7881b3",
+              "60a8c684bb4f176c",
+              "901b1c8648cd3abb",
+              "a188076f56b43d50",
+              "6a0c9e2086408cfc",
+              "7418e1d8fb0068d5",
+              "8b034b98b7d2dfe9",
+              "8a4f66fd91a5b738",
+              "2fda74ec2842e41c",
+              "8b1d3920a7d16706",
+              "db352f9ef3664047"
+            ],
+            "severity": "high"
+          },
+          {
+            "evidence_id": "risk:4",
+            "provider": "Meridian Behavioral Health",
+            "code": "DENIAL",
+            "title": "Elevated denial exposure",
+            "observed": 0.111842,
+            "threshold": 0.09,
+            "observed_exact": "0.1118424614807086114285398828549819755662653262891748508084772804",
+            "threshold_exact": "0.09",
+            "operator": ">",
+            "policy_id": "fd834f242bc9a5c4",
+            "cohort_ids": [
+              "540bbe91c57f2c40",
+              "1af348b518fb58cc",
+              "3b45e3ecee0a6129",
+              "c20316191b768cc9",
+              "f25951d343443204",
+              "44d3ad94d48800dd",
+              "c2a546ff8d40e2e6",
+              "783d738bfbf9dc52",
+              "d98c4c03f2db352f",
+              "5657093c640f95cf",
+              "bca726f3a656b10f",
+              "3eb42b256799b68d",
+              "1b74864d88dc9c19",
+              "7cc6b8fb9b7881b3",
+              "60a8c684bb4f176c",
+              "901b1c8648cd3abb",
+              "a188076f56b43d50",
+              "6a0c9e2086408cfc",
+              "7418e1d8fb0068d5",
+              "8b034b98b7d2dfe9",
+              "8a4f66fd91a5b738",
+              "2fda74ec2842e41c",
+              "8b1d3920a7d16706",
+              "db352f9ef3664047"
+            ],
+            "severity": "high"
+          },
+          {
+            "evidence_id": "risk:10",
+            "provider": "Meridian Behavioral Health",
+            "code": "CONCENTRATION",
+            "title": "Payer concentration",
+            "observed": 0.256775,
+            "threshold": 0.215,
+            "observed_exact": "0.2567750340890898351026537045317787604268450892388886128638699812",
+            "threshold_exact": "0.215",
+            "operator": ">",
+            "policy_id": "fd834f242bc9a5c4",
+            "cohort_ids": [
+              "f25951d343443204",
+              "44d3ad94d48800dd",
+              "c2a546ff8d40e2e6",
+              "783d738bfbf9dc52"
+            ],
+            "severity": "medium"
+          }
+        ],
+        "cost": null,
+        "price_estimate": {
+          "usd": "0.0004232",
+          "rates_usd_per_million": {
+            "input": "0.10",
+            "cached_input": "0.01",
+            "output": "0.50"
+          },
+          "source_url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+          "verified_on": "2026-10-25",
+          "basis": "Observed usage \u00d7 published short-context Global Standard model rates. Excludes gateway fees, account discounts, hosting and support; not an invoice.",
+          "gateway_cache_hit": false,
+          "cache_note": "Gateway HIT responses may replay prior token counts. Reference estimate is uncached-equivalent model cost, not verified new billable usage."
+        },
+        "latency_ms": 4070.17,
+        "generation_method": "AI chose borrowers, invoked a read-only evidence tool and selected inspected evidence. Financial wording and figures are deterministic.",
+        "coverage": {
+          "included_flags": 3,
+          "total_flags": 12,
+          "borrowers_inspected": 1,
+          "borrowers_total": 8
+        },
+        "investigation": {
+          "profile": "lean",
+          "focus": "denial",
+          "calls": [
+            {
+              "turn": 1,
+              "response_id": "resp_0ab02cf8abf2e738016adec81edeb0819389752193f68d4a88",
+              "returned_model": "gpt-6-luna-global",
+              "gateway_cost_header": null,
+              "gateway_provider": "azure-openai",
+              "gateway_cache_status": "MISS",
+              "gateway_retry_count": "0",
+              "header_names": [
+                "alt-svc",
+                "apim-request-id",
+                "azureai-fe-is-streaming",
+                "azureai-fe-offer-type",
+                "cf-cache-status",
+                "cf-ray",
+                "connection",
+                "content-encoding",
+                "content-type",
+                "date",
+                "server",
+                "skip-error-remapping",
+                "strict-transport-security",
+                "transfer-encoding",
+                "vary",
+                "x-content-type-options",
+                "x-http2-stream-id",
+                "x-ms-aoai-configured-data-retention-days",
+                "x-ms-client-request-id",
+                "x-ms-is-spilled-over",
+                "x-ms-region",
+                "x-ms-served-model",
+                "x-portkey-cache-status",
+                "x-portkey-last-used-option-index",
+                "x-portkey-provider",
+                "x-portkey-retry-attempt-count",
+                "x-portkey-trace-id",
+                "x-ratelimit-abusepenalty-active",
+                "x-ratelimit-key",
+                "x-ratelimit-limit-requests",
+                "x-ratelimit-limit-tokens",
+                "x-ratelimit-remaining-requests",
+                "x-ratelimit-remaining-tokens",
+                "x-ratelimit-renewalperiod-requests",
+                "x-ratelimit-renewalperiod-tokens",
+                "x-ratelimit-reset-requests",
+                "x-ratelimit-reset-tokens",
+                "x-request-id"
+              ],
+              "usage": {
+                "input_tokens": 1040,
+                "cached_input_tokens": 0,
+                "output_tokens": 23
+              },
+              "latency_ms": 2266.02,
+              "service_tier": "default"
+            },
+            {
+              "turn": 2,
+              "response_id": "resp_0ab02cf8abf2e738016adec81fec6481938b13e1065badc6c1",
+              "returned_model": "gpt-6-luna-global",
+              "gateway_cost_header": null,
+              "gateway_provider": "azure-openai",
+              "gateway_cache_status": "MISS",
+              "gateway_retry_count": "0",
+              "header_names": [
+                "alt-svc",
+                "apim-request-id",
+                "azureai-fe-is-streaming",
+                "azureai-fe-offer-type",
+                "cf-cache-status",
+                "cf-ray",
+                "connection",
+                "content-encoding",
+                "content-type",
+                "date",
+                "server",
+                "skip-error-remapping",
+                "strict-transport-security",
+                "transfer-encoding",
+                "vary",
+                "x-content-type-options",
+                "x-http2-stream-id",
+                "x-ms-aoai-configured-data-retention-days",
+                "x-ms-client-request-id",
+                "x-ms-is-spilled-over",
+                "x-ms-region",
+                "x-ms-served-model",
+                "x-portkey-cache-status",
+                "x-portkey-last-used-option-index",
+                "x-portkey-provider",
+                "x-portkey-retry-attempt-count",
+                "x-portkey-trace-id",
+                "x-ratelimit-abusepenalty-active",
+                "x-ratelimit-key",
+                "x-ratelimit-limit-requests",
+                "x-ratelimit-limit-tokens",
+                "x-ratelimit-remaining-requests",
+                "x-ratelimit-remaining-tokens",
+                "x-ratelimit-renewalperiod-requests",
+                "x-ratelimit-renewalperiod-tokens",
+                "x-ratelimit-reset-requests",
+                "x-ratelimit-reset-tokens",
+                "x-request-id"
+              ],
+              "usage": {
+                "input_tokens": 2842,
+                "cached_input_tokens": 0,
+                "output_tokens": 47
+              },
+              "latency_ms": 1561.64,
+              "service_tier": "default"
+            }
+          ],
+          "trace": [
+            {
+              "step": 1,
+              "tool": "read_review_evidence",
+              "call_id": "call_GMSxFgQDa3MAPxt0kjcCg43s",
+              "arguments": {
+                "borrower_id": "b7"
+              },
+              "result": {
+                "analysis_id": "eb70906f3a2b4ef9",
+                "policy_id": "fd834f242bc9a5c4",
+                "borrower_id": "b7",
+                "provider": "Meridian Behavioral Health",
+                "amounts_exact": {
+                  "gross_ar": "181143.00",
+                  "net_allowed": "121924.85",
+                  "expected_collectible": "102267.17",
+                  "eligible_collateral": "83611.88",
+                  "borrowing_base": "66889.51"
+                },
+                "risk_catalog": {
+                  "risk:3": "Meridian Behavioral Health: Low estimated advanceability; observed ratio 0.369263565249554219594464042220786892123902110487294568379677934 < 0.45, policy fd834f242bc9a5c4.",
+                  "risk:4": "Meridian Behavioral Health: Elevated denial exposure; observed ratio 0.1118424614807086114285398828549819755662653262891748508084772804 > 0.09, policy fd834f242bc9a5c4.",
+                  "risk:10": "Meridian Behavioral Health: Payer concentration; observed ratio 0.2567750340890898351026537045317787604268450892388886128638699812 > 0.215, policy fd834f242bc9a5c4."
+                },
+                "flags": [
+                  {
+                    "evidence_id": "risk:3",
+                    "provider": "Meridian Behavioral Health",
+                    "code": "ADVANCEABILITY",
+                    "title": "Low estimated advanceability",
+                    "observed": 0.369264,
+                    "threshold": 0.45,
+                    "observed_exact": "0.369263565249554219594464042220786892123902110487294568379677934",
+                    "threshold_exact": "0.45",
+                    "operator": "<",
+                    "policy_id": "fd834f242bc9a5c4",
+                    "cohort_ids": [
+                      "540bbe91c57f2c40",
+                      "1af348b518fb58cc",
+                      "3b45e3ecee0a6129",
+                      "c20316191b768cc9",
+                      "f25951d343443204",
+                      "44d3ad94d48800dd",
+                      "c2a546ff8d40e2e6",
+                      "783d738bfbf9dc52",
+                      "d98c4c03f2db352f",
+                      "5657093c640f95cf",
+                      "bca726f3a656b10f",
+                      "3eb42b256799b68d",
+                      "1b74864d88dc9c19",
+                      "7cc6b8fb9b7881b3",
+                      "60a8c684bb4f176c",
+                      "901b1c8648cd3abb",
+                      "a188076f56b43d50",
+                      "6a0c9e2086408cfc",
+                      "7418e1d8fb0068d5",
+                      "8b034b98b7d2dfe9",
+                      "8a4f66fd91a5b738",
+                      "2fda74ec2842e41c",
+                      "8b1d3920a7d16706",
+                      "db352f9ef3664047"
+                    ],
+                    "severity": "high"
+                  },
+                  {
+                    "evidence_id": "risk:4",
+                    "provider": "Meridian Behavioral Health",
+                    "code": "DENIAL",
+                    "title": "Elevated denial exposure",
+                    "observed": 0.111842,
+                    "threshold": 0.09,
+                    "observed_exact": "0.1118424614807086114285398828549819755662653262891748508084772804",
+                    "threshold_exact": "0.09",
+                    "operator": ">",
+                    "policy_id": "fd834f242bc9a5c4",
+                    "cohort_ids": [
+                      "540bbe91c57f2c40",
+                      "1af348b518fb58cc",
+                      "3b45e3ecee0a6129",
+                      "c20316191b768cc9",
+                      "f25951d343443204",
+                      "44d3ad94d48800dd",
+                      "c2a546ff8d40e2e6",
+                      "783d738bfbf9dc52",
+                      "d98c4c03f2db352f",
+                      "5657093c640f95cf",
+                      "bca726f3a656b10f",
+                      "3eb42b256799b68d",
+                      "1b74864d88dc9c19",
+                      "7cc6b8fb9b7881b3",
+                      "60a8c684bb4f176c",
+                      "901b1c8648cd3abb",
+                      "a188076f56b43d50",
+                      "6a0c9e2086408cfc",
+                      "7418e1d8fb0068d5",
+                      "8b034b98b7d2dfe9",
+                      "8a4f66fd91a5b738",
+                      "2fda74ec2842e41c",
+                      "8b1d3920a7d16706",
+                      "db352f9ef3664047"
+                    ],
+                    "severity": "high"
+                  },
+                  {
+                    "evidence_id": "risk:10",
+                    "provider": "Meridian Behavioral Health",
+                    "code": "CONCENTRATION",
+                    "title": "Payer concentration",
+                    "observed": 0.256775,
+                    "threshold": 0.215,
+                    "observed_exact": "0.2567750340890898351026537045317787604268450892388886128638699812",
+                    "threshold_exact": "0.215",
+                    "operator": ">",
+                    "policy_id": "fd834f242bc9a5c4",
+                    "cohort_ids": [
+                      "f25951d343443204",
+                      "44d3ad94d48800dd",
+                      "c2a546ff8d40e2e6",
+                      "783d738bfbf9dc52"
+                    ],
+                    "severity": "medium"
+                  }
+                ],
+                "question_catalog": {
+                  "question:0": "Are collection, contractual adjustment and denial assumptions independently calibrated?",
+                  "question:1": "Are payer-specific assignments, account control and lender documentation legally permissible?",
+                  "question:2": "Can results be reconciled to actual cash remittances and historical recoveries?"
+                },
+                "cohorts": [
+                  {
+                    "cohort_id": "1af348b518fb58cc",
+                    "provider": "Meridian Behavioral Health",
+                    "payer": "Aetna / CVS",
+                    "age": "31-60",
+                    "inputs_exact": {
+                      "provider": "Meridian Behavioral Health",
+                      "payer": "Aetna / CVS",
+                      "payer_type": "Commercial",
+                      "aging_bucket": "31-60",
+                      "gross_ar": "5808",
+                      "contractual_adjustment_rate": "0.3084",
+                      "historical_collection_factor": "0.9472",
+                      "denial_rate": "0.1023"
+                    },
+                    "amounts_exact": {
+                      "gross_ar": "5808.00",
+                      "net_allowed": "4016.81",
+                      "expected_collectible": "3415.50",
+                      "eligible_collateral": "3244.73",
+                      "borrowing_base": "2595.78"
+                    },
+                    "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                    "reason_codes": [
+                      "CONTRACT_ADJUSTMENT",
+                      "COLLECTION_FACTOR",
+                      "DENIAL_HAIRCUT",
+                      "AGING_FACTOR",
+                      "ADVANCE_RATE"
+                    ],
+                    "rounding_adjustments": {
+                      "gross_ar": "0",
+                      "net_allowed": "-0.0028",
+                      "expected_collectible": "-0.001708050432",
+                      "eligible_collateral": "0.0033773520896",
+                      "borrowing_base": "-0.00129811832832"
+                    }
+                  },
+                  {
+                    "cohort_id": "1b74864d88dc9c19",
+                    "provider": "Meridian Behavioral Health",
+                    "payer": "Medicaid",
+                    "age": "0-30",
+                    "inputs_exact": {
+                      "provider": "Meridian Behavioral Health",
+                      "payer": "Medicaid",
+                      "payer_type": "Medicaid",
+                      "aging_bucket": "0-30",
+                      "gross_ar": "9806",
+                      "contractual_adjustment_rate": "0.4219",
+                      "historical_collection_factor": "0.9167",
+                      "denial_rate": "0.1004"
+                    },
+                    "amounts_exact": {
+                      "gross_ar": "9806.00",
+                      "net_allowed": "5668.85",
+                      "expected_collectible": "4674.89",
+                      "eligible_collateral": "3739.91",
+                      "borrowing_base": "2991.93"
+                    },
+                    "formula": "N=G*(1-contract); E=N*collection*(1-denial); C=E*aging*payer; B=C*advance",
+                    "reason_codes": [
+                      "CONTRACT_ADJUSTMENT",
+                      "COLLECTION_FACTOR",
+                      "DENIAL_HAIRCUT",
+                      "PAYER_FACTOR",
+                      "ADVANCE_RATE"
+                    ],
+                    "rounding_adjustments": {
+                      "gross_ar": "0",
+                      "net_allowed": "0.0014",
+                      "expected_collectible": "-0.001507053352",
+                      "eligible_collateral": "-0.0032056426816",
+                      "borrowing_base": "-0.00056451414528"
+                    }
+                  }
+                ],
+                "coverage": {
+                  "cohorts_returned": 2,
+                  "borrower_cohorts": 24
+                },
+                "gate": "Synthetic, unvalidated factors. Legal eligibility unreviewed. Human review required."
+              }
+            }
+          ],
+          "max_tools": 1,
+          "deadline_seconds": 60,
+          "rule_flag_coverage": 0.25
+        }
+      }
+    }
+  },
+  "limit": "Software timings are not user savings or commercial impact. No independent participant has tested this upgrade."
+}

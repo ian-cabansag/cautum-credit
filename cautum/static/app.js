@@ -13,7 +13,7 @@
     state.active=view; document.querySelectorAll('.view').forEach(el=>el.classList.toggle('hidden',el.id!==`view-${view}`));
     document.querySelectorAll('[data-view]').forEach(el=>{el.classList.toggle('active',el.dataset.view===view);if(el.dataset.view===view)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');});
     const heading=$('view-'+view).querySelector('h1');heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});
-    $('crumb').textContent=({overview:'OVERVIEW',portfolio:'PORTFOLIO LEDGER',policy:'POLICY LAB',memo:'CREDIT BRIEF',surveillance:'SURVEILLANCE'})[view];
+    $('crumb').textContent=({overview:'OVERVIEW',portfolio:'PORTFOLIO LEDGER',policy:'POLICY LAB',memo:'CREDIT BRIEF',surveillance:'CHANGE DESK'})[view];
     window.scrollTo({top:0,behavior:'smooth'});if(view==='surveillance'&&state.policy)window.CautumSurveillance.load(state.policy);
   }
   function nameBadge(status){return `<span class="risk ${status==='Watch'?'watch':status==='High attention'?'high':'good'}">${clean(status)}</span>`;}
@@ -81,7 +81,7 @@
     const diff=Object.keys(a.policy).filter(k=>a.policy[k]!==window.__defaultPolicy[k]);
     $('policyEvidence').innerHTML=`<p>Applied policy <strong>${clean(a.policy_id)}</strong> · ${clean(a.engine_version)}</p><p>${diff.length?diff.map(k=>`${clean(k)}: ${clean(window.__defaultPolicy[k])} → ${clean(a.policy[k])}`).join('<br>'):'Default illustrative policy. No lender approval recorded.'}</p>`;
   }
-  function render(a){state.analysis=a;state.memo=null;$('agentState').textContent='· NO MODEL CALLS FOR THIS ANALYSIS';$('memoPip').classList.remove('ready');
+  function render(a){window.CautumSurveillance.invalidate(a.policy_id);state.analysis=a;state.memo=null;$('agentState').textContent='· NO MODEL CALLS FOR THIS ANALYSIS';$('memoPip').classList.remove('ready');
     $('memoPaper').innerHTML='<div class="memo-placeholder"><span>◈</span><h3>Your credit brief begins here</h3><p>Generate a rules-based brief, or configure an API key to investigate borrower evidence.</p></div>';
     $('tokenInfo').textContent='Token usage appears after a successful model call.';
     $('formulaExplorer').innerHTML='<p>Select a cohort in the trace to inspect its calculation.</p>';renderOverview(a);renderPortfolio(a);renderPolicy(a);

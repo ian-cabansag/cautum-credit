@@ -1,0 +1,160 @@
+[
+  {
+    "actualWidth": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "view": "Overview",
+    "width": 1440
+  },
+  {
+    "actualWidth": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "view": "Portfolio ledger",
+    "width": 1440
+  },
+  {
+    "actualWidth": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "view": "Policy lab",
+    "width": 1440
+  },
+  {
+    "actualWidth": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "view": "Change desk",
+    "width": 1440
+  },
+  {
+    "actualWidth": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "view": "Credit brief",
+    "width": 1440
+  },
+  {
+    "actualWidth": 1024,
+    "overflow": false,
+    "scrollWidth": 1024,
+    "view": "Overview",
+    "width": 1024
+  },
+  {
+    "actualWidth": 1024,
+    "overflow": false,
+    "scrollWidth": 1024,
+    "view": "Portfolio ledger",
+    "width": 1024
+  },
+  {
+    "actualWidth": 1024,
+    "overflow": false,
+    "scrollWidth": 1024,
+    "view": "Policy lab",
+    "width": 1024
+  },
+  {
+    "actualWidth": 1024,
+    "overflow": false,
+    "scrollWidth": 1024,
+    "view": "Change desk",
+    "width": 1024
+  },
+  {
+    "actualWidth": 1024,
+    "overflow": false,
+    "scrollWidth": 1024,
+    "view": "Credit brief",
+    "width": 1024
+  },
+  {
+    "actualWidth": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "view": "Overview",
+    "width": 768
+  },
+  {
+    "actualWidth": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "view": "Portfolio ledger",
+    "width": 768
+  },
+  {
+    "actualWidth": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "view": "Policy lab",
+    "width": 768
+  },
+  {
+    "actualWidth": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "view": "Change desk",
+    "width": 768
+  },
+  {
+    "actualWidth": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "view": "Credit brief",
+    "width": 768
+  },
+  {
+    "actualWidth": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "view": "Overview",
+    "width": 390
+  },
+  {
+    "actualWidth": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "view": "Portfolio ledger",
+    "width": 390
+  },
+  {
+    "actualWidth": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "view": "Policy lab",
+    "width": 390
+  },
+  {
+    "actualWidth": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "view": "Change desk",
+    "width": 390
+  },
+  {
+    "actualWidth": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "view": "Credit brief",
+    "width": 390
+  },
+  {
+    "example": "growth-aging",
+    "overflow": false,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "example": "denial-input",
+    "overflow": false,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "example": "mapped-rename",
+    "overflow": false,
+    "scrollWidth": 390,
+    "width": 390
+  }
+]

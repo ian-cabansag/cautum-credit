@@ -1,3 +1,18 @@
+# Current v0.4 demonstration · 3 minutes
+
+Run README's localhost command. Use only the included constructed/synthetic examples. Core comparison requires no key.
+
+1. **0:00–0:25** Overview: exact gross 1,934,634.00 to illustrative base 761,801.19; show policy/analysis IDs. State assumptions are fictional, legal eligibility unreviewed.
+2. **0:25–1:10** Changes → Explore a lender question → clinic growth/aging case. Gross 100,000→120,000 but base 43,776→32,832. Open the borrower review and paired inputs: balance shifts from recent to 91+ under unchanged policy. Ask whether source periods and cash reconciliation are comparable. This explains modeled variance, not why invoices actually aged or whether cash was lost.
+3. **1:10–1:40** Imaging: denial 5%→15%, gross unchanged, base 54,720→48,960. Show exactly −5,760 and ask denominator/double-counting question. Switch to mapped payer rename: stable identity, same 27,360 base. A label change is not evidence of deterioration.
+4. **1:40–2:10** Return to portfolio. Sort/filter the borrower queue, open original source factors and export server-generated packet/JSON. Show the downloadable source pair and 18-file reviewer kit with blank feedback. No independent tester has completed this upgrade.
+5. **2:10–2:40** Brief: optional authorized AI investigate, inspect actual read-only tool receipt and evidence IDs; all financial amounts remain deterministic. Comparison itself uses zero AI calls.
+6. **2:40–3:00** Show rejected unknown field or invalid manifest with last accepted result retained. Close with the actual founder baseline (both correct, app slower), and independent lender review/data rights/enterprise controls as remaining gates.
+
+Actual v0.4 evidence: v04-runtime.json, v04-browser-layouts.json, change-desk-v04.png, change-case-v04.png and v04-report/slides-layout.json. Software latency is not analyst time. Never describe examples as customer case studies or a pilot.
+
+## Historical v0.3 and earlier scripts
+
 # Current v0.3 live demonstration
 
 1. Start the app with the README command and included synthetic dataset.

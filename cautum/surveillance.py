@@ -157,7 +157,7 @@ def compare(before: dict, after: dict) -> dict:
                     "delta": deltas[k],
                 }
             )
-    return {
+    result = {
         "before": {
             "manifest": b,
             "source_sha256": before["source_sha256"],
@@ -182,3 +182,7 @@ def compare(before: dict, after: dict) -> dict:
         "headroom_delta": None,
         "limitations": "Balance changes only; no cash collections, remittance reconciliation, migration attribution, reserves or outstandings supplied. Headroom cannot be calculated. Ratio deltas use six-decimal displayed ratios. Explicit identity maps required for renames.",
     }
+    from .change_review import build_review
+
+    result["change_review"] = build_review(before, after, result)
+    return result
