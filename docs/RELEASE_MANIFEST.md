@@ -8,7 +8,7 @@ The original Downloads application was preserved; all 41 original files matched 
 
 | Check | Observed result | Practical limit |
 |---|---|---|
-| Remote source integrity | Candidate 99b75d35aa6b09731a3e8b4fd010844699ee5b08 exactly matches local tree bd4c0c0cc50022a5a18b3f3990b1a7bbbbef1309 | Final handoff updates are documentation/evidence only |
+| Remote source integrity | Candidate 99b75d35aa6b09731a3e8b4fd010844699ee5b08 exactly matches local tree bd4c0c0cc50022a5a18b3f3990b1a7bbbbef1309 | Final handoff updates are documentation/artifact only |
 | Fresh remote setup | **23.47s** to healthy runtime; **38.90s** for all checks | Git/Python preinstalled; macOS arm64/Python 3.12.14; pip cache disabled, network/CDN caches uncontrolled |
 | Tests | **87 passed**, one Starlette TestClient deprecation warning | Mock model tests are distinct from live receipts |
 | Quality/dependencies | Ruff lint/format and pip check passed | Version pins are not comprehensive security certification; earlier advisory scan is dated evidence |

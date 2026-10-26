@@ -497,9 +497,12 @@ python -m uvicorn cautum.api:app --host 127.0.0.1 --port 8000</pre><p>On Windows
     ]
     js = (reveal_path / "dist/reveal.js").read_text().replace("</script", "<\\/script")
     css = (reveal_path / "dist/reveal.css").read_text()
+    license_notice = (reveal_path / "LICENSE").read_text().replace("--", "- -")
     custom = """body{background:#f6f7f4;color:#173d33}.reveal{font:28px Arial,sans-serif}.reveal .slides{text-align:left}.reveal .slides section{padding:25px 40px;box-sizing:border-box}.reveal h2{font:52px/1.12 Georgia,serif;letter-spacing:-1px;margin:0 0 28px}.reveal p{line-height:1.5;margin:22px 0}.reveal .big{font-size:36px;line-height:1.4}.reveal .small{font-size:20px;line-height:1.45;color:#536b60}.reveal .slide-screen{display:block;max-height:465px;max-width:100%;object-fit:contain;margin:auto}.reveal .architecture{max-height:405px;width:100%}.reveal table{font-size:25px;border-collapse:collapse;width:100%;margin:24px 0}.reveal th,.reveal td{padding:15px;border-bottom:1px solid #a9bfaf;text-align:left}.reveal th{font-size:20px;color:#536b60}.reveal .chapter{font-size:16px;letter-spacing:2px;color:#536b60;margin-bottom:20px}.reveal a{color:#173d33}.reveal .controls,.reveal .progress{color:#173d33}.slide-number{color:#173d33!important;background:transparent!important}"""
     deck = (
-        '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cautum Credit | Ian Cabansag | Slides</title><style>'
+        '<!doctype html><html lang="en"><head><!--\n'
+        + license_notice
+        + '\n--><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cautum Credit | Ian Cabansag | Slides</title><style>'
         + css
         + custom
         + '</style></head><body><div class="reveal"><div class="slides">'
