@@ -1,5 +1,14 @@
 # QA results · 2026-10-25
 
+## Current v0.3 course release
+
+Actual remote clone at 99b75d35aa6b09731a3e8b4fd010844699ee5b08: runtime ready in 23.47s, all verification in 38.90s, new venv and pip cache disabled. **87 tests passed**, Ruff lint/format passed, pip check passed, **610** frontend positions passed. Real HTTP verified exact analysis/scenario, deterministic memo, scoped certificate, surveillance, request guardrails, parent .env lookup and a live one-borrower tool investigation. Regeneration left no Git diff. See evidence/remote-clone-v03.json.
+
+Six fresh paired benchmark AI reviews, the separate live injection and cached matching browser receipt are preserved with their limits in AI_EVALUATION.md. Twenty responsive checks passed. Twelve report page boxes fit and all embedded images loaded; all ten slides were traversed. The twelve-page Letter PDF companion was visually inspected. Direct file opening, native HTML print and native fullscreen remain unverified because of the available browser/desktop limits; COURSE_EVIDENCE.md distinguishes these checks. No model accuracy, faster founder performance, independent lender validation or production readiness is inferred.
+
+The phase records below are historical checkpoints; earlier missing-AI/user-evidence statements are superseded by this current result.
+
+
 ## Prompt 1 · runtime and interactions
 Python 3.12 virtual environment, real loopback Uvicorn, actual IAB browser, no intercepted network responses.
 

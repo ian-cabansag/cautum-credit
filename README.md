@@ -23,6 +23,8 @@ On Windows use `.venv\Scripts\Activate.ps1` after creating the environment. Depe
 
 Open **http://127.0.0.1:8000**. The included fictional portfolio auto-loads, with no secret or external service needed. A local course demo uses the same command; `--reload` is optional during development. See docs/RELEASE_MANIFEST.md for clean-clone results and known limits.
 
+Verified from the public GitHub clone on the tested host: **23.47 seconds** to healthy runtime with a new environment and pip cache disabled; **38.90 seconds** including 87 tests, HTTP checks, a real AI tool review and reproducible artifact generation. Git and Python were already installed. Raw evidence: docs/evidence/remote-clone-v03.json.
+
 ## Demonstrated capabilities
 
 - Eight fictional borrowers, 192 payer/aging cohorts, deterministic Decimal gross-to-base bridge.

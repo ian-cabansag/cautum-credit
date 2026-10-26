@@ -51,6 +51,12 @@ Cautum took **55.64s longer**. Different cases, worksheet first, one founder, se
 | Real human-impact evidence and limitations | Report section 10; consented founder data, slower timing disclosed |
 | Limits and next month | Report sections 11–12; roadmap and reproducible setup |
 | 10–15 report pages / at most 10 reveal.js slides | Twelve bounded HTML pages and twelve-page PDF companion; ten actually traversed slides. Native file/print/fullscreen limitations above. |
-| Fresh clone under ten minutes | Final measured result is recorded in submission-qa.json after remote publication. No earlier warm-cache run is substituted. |
+| Fresh clone under ten minutes | Remote GitHub clone + new venv + pip --no-cache-dir: runtime ready in 23.47s; all checks finished in 38.90s on the tested macOS/Python host. Raw receipt: remote-clone-v03.json. |
 
 The technical/product work is substantial, but no grade, model accuracy, independent lender validation, commercial adoption, regulatory compliance or integration success is asserted.
+
+## Final remote-clone verification
+
+Published candidate `99b75d35aa6b09731a3e8b4fd010844699ee5b08` had the exact local source tree `bd4c0c0cc50022a5a18b3f3990b1a7bbbbef1309`. A new remote clone and environment, with pip cache disabled, reached healthy runtime in **23.47 seconds**. All checks completed in **38.90 seconds**: 87 tests, lint/format, dependency consistency, 610 slider positions, exact analysis and sensitivity, scoped certificate, synthetic surveillance, guardrails and an actual one-borrower live AI investigation. Regenerating both datasets/snapshots and both HTML files left no Git diff.
+
+The real key was temporarily placed one folder above the clone; credential variables were removed from the launch environment, and no .env existed inside the clone. Parent lookup succeeded. The temporary key copy and QA server were removed after verification. Git and Python were preinstalled; installation of those prerequisites and other platforms were not timed. Network/CDN caches were not controlled. Two earlier verification-script mistakes (null offline usage treated as a dictionary and an absent hard-coded borrower name) were corrected before the successful fresh run; application code did not change. The final handoff update changes documentation and recorded evidence only.
